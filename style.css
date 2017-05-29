@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:900i);
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400);
 
 body {
 	background-color: #f9f9f9;
@@ -8,8 +8,8 @@ body {
 }
 
 html {
-	font-family: "Roboto", sans-serif;
-	font-weight: 300;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
 }
 
 h1 {
