@@ -21,17 +21,15 @@ h1 {
 }
 
 .navbar {
+    background-color: #303030;
     border-style: none;
     border-radius: 0px;
-
-}
-.navbar-nav li {
-	background-color: #303030;
-	color: #f9f9f9;
+    color: #f9f9f9;
 }
 
 .navbar-nav li:hover {
 	background-color: #444444;
+	color: #f9f9f9;
 }
 
 #header {
