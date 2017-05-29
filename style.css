@@ -1,9 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:900i);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400);
 
-html, html body {
+body {
 	background-color: #f9f9f9;
-	color: #303030;
+	color: #f9f9f9;
+	font-size: 18px;
+}
+body a:hover {
+	color: #ededed;
 }
 
 html {
@@ -21,13 +25,6 @@ h1 {
     background-color: #303030;
     border-style: none;
     border-radius: 0px;
-}
-.navbar-default .navbar-nav > li > a {
-	color: #f9f9f9;
-	font-size: 18px;
-}
-.navbar-default .navbar-nav > li > a:hover {
-	color: #ededed;
 }
 
 #header {
