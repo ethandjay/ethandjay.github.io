@@ -1,5 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:900i);
 
+html {
+	background-color: #f9f9f9;
+	color: #303030;
+}
+
 h1 {
 	font-family: "Roboto", sans-serif;
 	font-weight: 900;
@@ -8,5 +13,5 @@ h1 {
 }
 #header {
 	margin-left: 50px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
