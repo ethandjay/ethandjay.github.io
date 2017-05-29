@@ -1,18 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:900i);
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400);
 
 body {
 	background-color: #f9f9f9;
 	color: #f9f9f9;
 	font-size: 18px;
 }
-body a:hover {
-	color: #ededed;
-}
 
 html {
 	font-family: "Roboto", sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 h1 {
@@ -20,11 +17,17 @@ h1 {
 	font-weight: 900;
 	font-style: italic;
 	font-size: 140px;
+	color: #303030;
 }
+
 .navbar {
     background-color: #303030;
     border-style: none;
     border-radius: 0px;
+}
+
+.navbar-nav li:hover {
+	background-color: #444444;
 }
 
 #header {
