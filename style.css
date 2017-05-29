@@ -27,15 +27,15 @@ h1 {
     color: #f9f9f9;
 }
 
-.navbar-nav li > a {
+.navbar-nav > li > a {
 	color: #f9f9f9;
 }
 
-.navbar-nav li:hover {
+.navbar-nav > li:hover {
 	background-color: #444444;
 }
 
-.navbar-nav li > a:hover {
+.navbar-nav > li > a:hover {
 	color: #f9f9f9;
 }
 
