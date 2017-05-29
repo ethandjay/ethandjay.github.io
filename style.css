@@ -1,13 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:900i');
-
 h1 {
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	font-weight: 900;
 	font-style: italic;
 	font-size: 140px;
-}
-
-#header {
-	margin-top: -75px;
-	margin-left: 40px;
 }
