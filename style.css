@@ -28,6 +28,7 @@ h1 {
 }
 .navbar-default .navbar-nav>li {
 	padding: 15px;
+	transition: color .5s;
 }
 
 .navbar-default .navbar-nav>li:hover {
