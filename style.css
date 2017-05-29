@@ -26,6 +26,9 @@ h1 {
 	color: #f9f9f9;
 	font-size: 18px;
 }
+.navbar-default .navbar-nav > li > a:hover {
+	color: #ededed;
+}
 
 #header {
 	margin-left: 50px;
