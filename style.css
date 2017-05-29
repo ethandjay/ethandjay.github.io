@@ -26,6 +26,9 @@ h1 {
     border-radius: 0px;
     color: #f9f9f9;
 }
+.navbar-default .navbar-nav>li {
+	padding: 15px;
+}
 
 .navbar-default .navbar-nav>li>a {
 	color: #f9f9f9;
