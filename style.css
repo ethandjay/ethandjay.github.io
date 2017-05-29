@@ -43,12 +43,13 @@ h1 {
 }
 
 #about {
-	height: 500px;
+	height: 350px;
 }
 
 #me {
-	margin-left: 0px;
+	margin-left: 200px;
 	height: 100%;
+	border-radius: 100px;
 }
 
 #header {
