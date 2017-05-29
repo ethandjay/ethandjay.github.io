@@ -25,6 +25,7 @@ h1 {
     border-style: none;
     border-radius: 0px;
     color: #f9f9f9;
+    margin-top: 100%;
 }
 .navbar-default .navbar-nav>li {
 	padding: 15px;
