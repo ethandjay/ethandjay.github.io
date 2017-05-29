@@ -6,3 +6,7 @@ h1 {
 	font-style: italic;
 	font-size: 72px;
 }
+
+#header {
+	margin: 100px;
+}
