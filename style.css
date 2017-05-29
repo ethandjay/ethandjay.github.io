@@ -1,10 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:900i);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800i);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
 html {
 	background-color: #f9f9f9;
 	font-family: "Open Sans", sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 
 h1 {
 	font-family: "Open Sans", sans-serif;
-	font-weight: 900;
+	font-weight: 800;
 	font-style: italic;
 	font-size: 140px;
 	color: #303030;
@@ -49,7 +49,6 @@ h1 {
 #me {
 	margin-left: 200px;
 	height: 100%;
-	border-radius: 100px;
 }
 
 #header {
