@@ -25,7 +25,6 @@ h1 {
     border-style: none;
     border-radius: 0px;
     color: #f9f9f9;
-    margin-top: 100%;
 }
 .navbar-default .navbar-nav>li {
 	padding: 15px;
@@ -45,4 +44,8 @@ h1 {
 	margin-bottom: 25px;
 	position: fixed;
 	z-index: -1;
+}
+#ghostheader {
+	margin-left: 50px;
+	margin-bottom: 25px;
 }
