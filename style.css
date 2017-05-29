@@ -11,12 +11,12 @@ h1 {
 	font-style: italic;
 	font-size: 140px;
 }
-.navbar-default {
+.navbar {
     background-color: #303030;
     border-style: none;
     border-radius: 0px;
 }
-.navbar-text {
+.navbar li a {
 	color: #f9f9f9;
 }
 
