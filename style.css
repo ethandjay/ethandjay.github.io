@@ -16,7 +16,7 @@ h1 {
     border-style: none;
     border-radius: 0px;
 }
-.navbar li a {
+.navbar-default .navbar-nav > li > a {
 	color: #f9f9f9;
 }
 
