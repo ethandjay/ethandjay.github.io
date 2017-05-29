@@ -13,9 +13,11 @@ h1 {
 }
 .navbar-default {
     background-color: #303030;
-    color: #f9f9f9;
     border-style: none;
     border-radius: 0px;
+}
+.navbar-text {
+	color: #f9f9f9;
 }
 
 #header {
