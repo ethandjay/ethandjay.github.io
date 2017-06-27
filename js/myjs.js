@@ -22,3 +22,13 @@ $(window).scroll(function() {
 	})
 })
 
+$(document).on('click', '.nav-link', function(event){
+
+	//prevents hash flicker
+    event.preventDefault();
+	history.pushState(null, null, $.attr(this, 'href'));
+
+    $('body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top - ($(window).height() - $('.section').height())/2
+    }, 500);
+});
