@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Hind:500);
 @import url(https://fonts.googleapis.com/css?family=Hind:300);
 
-.big-image {
+.big-image-container {
 	width: 70%;
 	height: 90%;
 	overflow: hidden;
