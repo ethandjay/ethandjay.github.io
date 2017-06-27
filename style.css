@@ -2,8 +2,5 @@
 @import url(https://fonts.googleapis.com/css?family=Hind:300);
 
 .big-image-container {
-	max-width: 70%;
-	max-height: 90%;
 	overflow: hidden;
-	float: right;
 }
