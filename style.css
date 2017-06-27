@@ -4,4 +4,5 @@
 .big-image {
 	width: 70%;
 	height: 90%;
+	overflow: hidden;
 }
