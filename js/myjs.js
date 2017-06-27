@@ -15,5 +15,10 @@ $(window).scroll(function() {
 	} else {
 		$('.carousel-overlay').fadeIn(200);
 	}
+
+	$('.overfit').css('transform', function () {
+		var val = 10 - (1.5*(($(document).height() - scrollHeight) / $(document).height())-.5)*10;
+		return "translateY(" + -val + "vh)";
+	})
 })
 
