@@ -1,6 +1,21 @@
-@import url(https://fonts.googleapis.com/css?family=Hind:500);
-@import url(https://fonts.googleapis.com/css?family=Hind:300);
+@import url(https://fonts.googleapis.com/css?family=Yrsa:500);
+@import url(https://fonts.googleapis.com/css?family=Yrsa:300);
 
-.big-image-container {
+.big-img-container {
+	overflow: hidden;
+	max-height: 100%;
+}
 
+.nameplate {
+	font-family: 'Yrsa', serif;
+	font-weight: 500;
+	font-size: 48px;
+	margin: 50px;
+	margin-top: 80px;
+}
+
+.nav-item {
+	font-family: 'Yrsa', serif;
+	font-weight: 300;
+	font-size: 24px;
 }
