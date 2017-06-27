@@ -1,9 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Yrsa:500);
 @import url(https://fonts.googleapis.com/css?family=Yrsa:300);
 
-.big-img-container {
+body {
+	background-color: #fafafa;
+	color: #373737;
+}
+
+.carousel-item {
 	overflow: hidden;
-	max-height: 100%;
+	max-height: 100vh;
 }
 
 .nameplate {
@@ -18,4 +23,8 @@
 	font-family: 'Yrsa', serif;
 	font-weight: 300;
 	font-size: 24px;
+}
+
+.nav-link {
+	color: #373737;
 }
