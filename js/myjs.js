@@ -1,18 +1,12 @@
-
-// var userScrolled = false;
-
-// $(window).scroll(function() {
-//   userScrolled = true;
-// });
-
-// setInterval(function() {
-//   if (userScrolled) {
-
 var scrollEvents = function() {
 	var scrollHeight = $(window).scrollTop();
+	var set = $('.section');
 	$('.section').each(function(index) {
 		$(this).css({
 			opacity: function () {
+				if (index == set.length-1 && ($(window).scrollTop() + $(window).height()) == $(document).height()) {
+					return 1;
+				}
 				var windowHeight = $(window).height();
 				var elemHeight = $(this).offset().top;
 				// if(index == 0) $('.nav-link').text(1 - Math.abs(((elemHeight - scrollHeight) / windowHeight)*2-1));
@@ -33,14 +27,23 @@ var scrollEvents = function() {
 }
 
 $(document).ready(scrollEvents);
-setInterval(scrollEvents, 10);
 
 
-//     userScrolled = false;
-//   }
-// }, 10);
+var userScrolled = false;
 
-$(document).on('click', '.nav-link', function(event){
+$(window).scroll(function() {
+  userScrolled = true;
+});
+
+setInterval(function() {
+  if (userScrolled) {
+  	scrollEvents();
+    userScrolled = false;
+  }
+}, 10);
+
+
+$(document).on('click', '.sidebar', function(event) {
 
 	//prevents hash flicker
     event.preventDefault();
@@ -49,4 +52,17 @@ $(document).on('click', '.nav-link', function(event){
     $('body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top - ($(window).height() - $('.section').height())/2
     }, 500);
+});
+
+$(document).on('click', '.section-link', function(event) {
+
+	//prevents hash flicker
+    event.preventDefault();
+
+    $('.section-nav-item').removeClass('active-section');
+    $(this).parent().addClass('active-section');
+
+    $('.toggleable').addClass('inactive-content');
+    $( $.attr(this, 'href') ).removeClass('inactive-content');
+
 });
