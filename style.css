@@ -68,6 +68,8 @@ p {
 	font-weight: 300;
 	font-size: 20px;
 	transition: background-color .25s;
+	-webkit-transition: background-color .25s;
+	-moz-transition: background-color .25s;
 }
 
 .nav-item:hover {
@@ -130,6 +132,8 @@ p {
 	position: absolute;
 	float: left;
 	transition: all .25s;
+	-webkit-transition: all .25s;
+	-moz-transition: all .25s;
 }
 
 .inactive-content {
@@ -141,6 +145,8 @@ p {
 	float: left;
 	opacity: .9;
 	transition: opacity .25s;
+	-webkit-transition: opacity .25s;
+	-moz-transition: opacity .25s;
 	display: block;
 	height: 100%;
 	width: auto;
