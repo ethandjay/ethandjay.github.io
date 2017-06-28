@@ -59,8 +59,12 @@ $(document).on('click', '.section-link', function(event) {
 	//prevents hash flicker
     event.preventDefault();
 
-    $('.section-nav-item').removeClass('active-section');
-    $(this).parent().addClass('active-section');
+    $('.section-nav-item').removeClass('active-nav-item');
+    $(this).parent().addClass('active-nav-item');
+
+    $('body').animate({
+        scrollTop: $($(this).closest('.section')).offset().top - ($(window).height() - $(this).closest('.section').height())/2
+    }, 500);
 
     $('.toggleable').addClass('inactive-content');
     $( $.attr(this, 'href') ).removeClass('inactive-content');
