@@ -33,20 +33,20 @@ var scrollEvents = function() {
 }
 
 $(document).ready(scrollEvents);
-$(window).scroll(scrollEvents);
+//$(window).scroll(scrollEvents);
 
-// var userScrolled = false;
+var userScrolled = false;
 
-// $(window).scroll(function() {
-//   userScrolled = true;
-// });
+$(window).scroll(function() {
+  userScrolled = true;
+});
 
-// setInterval(function() {
-//   if (userScrolled) {
-//   	scrollEvents();
-//     userScrolled = false;
-//   }
-// }, 10);
+setInterval(function() {
+  if (userScrolled) {
+  	scrollEvents();
+    userScrolled = false;
+  }
+}, 20);
 
 
 $(document).on('click', '.sidebar', function(event) {
