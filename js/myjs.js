@@ -2,17 +2,23 @@ var scrollEvents = function() {
 	var scrollHeight = $(window).scrollTop();
 	var set = $('.section');
 	$('.section').each(function(index) {
-		$(this).css({
-			opacity: function () {
-				if (index == set.length-1 && ($(window).scrollTop() + $(window).height()) == $(document).height()) {
-					return 1;
+		if (index == set.length-1 && ($(window).scrollTop() + $(window).height()) == $(document).height()) {
+			$(this).animate({ opacity: 1 });
+		}
+		else if (index == set.length-1 && ($(window).scrollTop() + $(window).height()) != $(document).height() && $(this).css("opacity") == 1) {
+			$(this).animate({ opacity: .75 });
+		} else {
+			$(this).css({
+				opacity: function () {
+					var windowHeight = $(window).height();
+					var elemHeight = $(this).height();
+					var elemOffsetFromTop = $(this).offset().top - scrollHeight;
+					 //if(index == 0) $('.nav-link').text(1 - Math.abs((windowHeight/2 - elemOffset - $(this).height()/2) / (windowHeight/2 + 150)));
+
+					return 1 - Math.abs((windowHeight/2 - elemOffsetFromTop - elemHeight/2) / (windowHeight/2 + 300));
 				}
-				var windowHeight = $(window).height();
-				var elemHeight = $(this).offset().top;
-				// if(index == 0) $('.nav-link').text(1 - Math.abs(((elemHeight - scrollHeight) / windowHeight)*2-1));
-				return 1 - Math.abs(((elemHeight - scrollHeight) / windowHeight)*2-.5) + .5;
-			}
-		})
+			})
+		}
 	})
 	if ($(window).scrollTop() > 50) {
 		$('.carousel-overlay').fadeOut();
