@@ -76,3 +76,16 @@ $(document).on('click', '.section-link', function(event) {
     $( $.attr(this, 'href') ).removeClass('inactive-content');
 
 });
+
+$(window).on('load', function () {
+	setTimeout(function(){
+		$('.left-flyer').addClass('left-anim');
+		$('.right-flyer').addClass('right-anim');
+	}, 2000);
+	setTimeout(function(){
+		$('.left-flyer').css({ opacity: 0 });
+		$('.right-flyer').css({ opacity: 0 });
+	}, 3000)
+});
+
+
