@@ -110,7 +110,8 @@ p {
 
 .section-nav {
 	float: left;
-	min-width: 250px;
+	flex-basis: 475px;
+	max-width: 250px;
 }
 
 .section-nav-item {
@@ -133,6 +134,7 @@ p {
 	display: flex;
 	transition: height 1s;
   	align-items: center; 
+  	justify-content: center;
 	background-color: #fafafa;
 	margin: 30px 35px;
 	padding: 30px;
@@ -142,12 +144,9 @@ p {
 }
 
 .section-text {
+	position: relative;
 	overflow: scroll;
 	margin: 0px 20px;
-}
-
-#about {
-	height: 300px;
 }
 
 .right-flyer, .left-flyer {
@@ -193,10 +192,6 @@ p {
 	opacity: 1;
 }
 
-.review-container {
-	position: relative;
-}
-
 .trash {
 	border-radius: 50%;
 	transition: transform 1s ease-in-out;
@@ -211,6 +206,12 @@ p {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
+
+}
+
+.review-container {
+	margin: 10px 0;
 }
 
 .wulogo {
@@ -221,19 +222,25 @@ p {
 }
 
 .me-img {
-	position: relative;
-	float: left;
 	opacity: .9;
 	transition: opacity .25s;
 	-webkit-transition: opacity .25s;
 	-moz-transition: opacity .25s;
 	display: block;
-	height: 85%;
-	width: auto;
-	margin: 0px 25px;
+	max-width: 100%;
+	height: auto;
+
 	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
+}
+
+.aspect-flex {
+	position: relative;
+	max-width: 200px;
+	min-width: 100px;
+	max-height: 200px;
+	min-height: 100px;
+	flex: 1 1 100%;
+	margin: 0px 25px;
 }
 
 .me-img:hover {
