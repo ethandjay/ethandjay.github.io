@@ -46,7 +46,7 @@ setInterval(function() {
   	scrollEvents();
     userScrolled = false;
   }
-}, 20);
+}, 50);
 
 
 $(document).on('click', '.sidebar', function(event) {
@@ -82,10 +82,15 @@ $(window).on('load', function () {
 		$('.left-flyer').addClass('left-anim');
 		$('.right-flyer').addClass('right-anim');
 	}, 2000);
-	setTimeout(function(){
-		$('.left-flyer').css({ opacity: 0 });
-		$('.right-flyer').css({ opacity: 0 });
-	}, 3000)
+	// setTimeout(function(){
+	// 	$('.left-flyer').css({ opacity: 0 });
+	// 	$('.right-flyer').css({ opacity: 0 });
+	// }, 3000)
 });
+
+$('.nameplate').on('mouseover', function() {
+	$('.right-flyer').removeClass('right-anim');
+	$('.left-flyer').removeClass('left-anim');
+})
 
 

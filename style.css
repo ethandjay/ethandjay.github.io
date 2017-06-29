@@ -120,19 +120,14 @@ p {
 }
 
 .section-content {
+	height: 350px;
+}
+
+.about-content {
 	margin: 65px;
 }
 
-.togglebox {
-	float: left;
-}
-
-.left-flyer {
-	display: inline-block;
-	transition: transform 1s cubic-bezier(.72,.01,.8,.18);
-}
-
-.right-flyer {
+.right-flyer, .left-flyer {
 	display: inline-block;
 	transition: transform 1s cubic-bezier(.72,.01,.8,.18);
 }
@@ -146,17 +141,22 @@ p {
 }
 
 .toggleable {
-	margin: 57px 30px;
-	position: absolute;
-	float: left;
 	transition: all .25s;
 	-webkit-transition: all .25s;
 	-moz-transition: all .25s;
 }
 
+.togglebox {
+	max-height: 100%;
+}
+
 .inactive-content {
-	opacity: 0;
+	display: none;
 	pointer-events: none;
+}
+
+.wulogo {
+	max-height: 100%;
 }
 
 .me-img {
@@ -176,4 +176,10 @@ p {
 
 .me-img:hover {
 	opacity: 1;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
