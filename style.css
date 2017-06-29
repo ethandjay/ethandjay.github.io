@@ -86,7 +86,6 @@ p {
 }
 
 .section-nav {
-	margin: 5px 0px;
 	float: left;
 }
 
@@ -107,6 +106,8 @@ p {
 }
 
 .section {
+	display: flex;
+  	align-items: center; 
 	background-color: #fafafa;
 	margin: 30px 35px;
 	padding: 30px;
@@ -117,11 +118,10 @@ p {
 }
 
 .section-text {
-	left: 3%;
 	overflow: hidden;
 	position: relative;
-	margin: 0 60px;
-	top: 15%;
+	margin: 0px 40px;
+	margin-bottom: -12px;
 }
 
 #about {
@@ -142,12 +142,13 @@ p {
 }
 
 .toggleable {
-	position: relative;
+	display: flex;
+	align-items: center;
 	height: 100%;
 }
 
 .togglebox {
-	padding: 0px 30px;
+	margin: 0px 40px;
 	max-height: 100%;
 	height: 100%;
 	overflow: hidden;
@@ -161,9 +162,9 @@ p {
 
 .wulogo {
 	position: relative;
+	display: block;
 	max-height: 100%;
 	height: 80%;
-	top: 10%;
 }
 
 .me-img {
@@ -176,7 +177,6 @@ p {
 	display: block;
 	height: 85%;
 	width: auto;
-	top: 7.5%;
 	margin: 0px 20px;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
