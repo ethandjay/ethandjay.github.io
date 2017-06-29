@@ -86,7 +86,7 @@ p {
 }
 
 .section-nav {
-	margin: 35px 30px;
+	margin: 5px 0px;
 	float: left;
 }
 
@@ -109,22 +109,23 @@ p {
 .section {
 	background-color: #fafafa;
 	margin: 30px 35px;
+	padding: 30px;
 	height: 350px;
 	overflow: scroll;
 	pointer-events: auto;
 	border-radius: .25rem;
 }
 
+.section-text {
+	left: 3%;
+	overflow: hidden;
+	position: relative;
+	margin: 0 60px;
+	top: 15%;
+}
+
 #about {
 	height: 300px;
-}
-
-.section-content {
-	height: 350px;
-}
-
-.about-content {
-	margin: 65px;
 }
 
 .right-flyer, .left-flyer {
@@ -141,34 +142,42 @@ p {
 }
 
 .toggleable {
-	transition: all .25s;
-	-webkit-transition: all .25s;
-	-moz-transition: all .25s;
+	position: relative;
+	height: 100%;
 }
 
 .togglebox {
+	padding: 0px 30px;
 	max-height: 100%;
+	height: 100%;
+	overflow: hidden;
 }
 
 .inactive-content {
+	opacity: 0;
 	display: none;
 	pointer-events: none;
 }
 
 .wulogo {
+	position: relative;
 	max-height: 100%;
+	height: 80%;
+	top: 10%;
 }
 
 .me-img {
+	position: relative;
 	float: left;
 	opacity: .9;
 	transition: opacity .25s;
 	-webkit-transition: opacity .25s;
 	-moz-transition: opacity .25s;
 	display: block;
-	height: 100%;
+	height: 85%;
 	width: auto;
-	padding: 50px;
+	top: 7.5%;
+	margin: 0px 20px;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
