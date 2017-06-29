@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Yrsa:500);
-@import url(https://fonts.googleapis.com/css?family=Yrsa:300);
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400);
+@import url(https://fonts.googleapis.com/css?family=Yrsa:400);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
 
 body {
 	background-color: #fafafa;
@@ -12,12 +12,22 @@ h1 {
 	color: #373737;
 	font-family: 'Yrsa', serif;
 	font-weight: 500;
+	font-size: 40px;
+}
+
+h2 {
+	color: #373737;
+	font-family: 'Yrsa', serif;
+	font-weight: 400;
+	font-size: 20px;
+	margin-top: 12px;
+	margin-bottom: 12px;
 }
 
 p {
 	color: #373737;
 	font-family: 'Source Sans Pro';
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 16px;
 }
 
@@ -49,7 +59,7 @@ p {
 	margin-bottom: auto;
 }
 
-.row {
+.wide-row {
 	margin-left: -15px;
 	margin-right: -15px;
 }
@@ -87,6 +97,7 @@ p {
 
 .section-nav {
 	float: left;
+	min-width: 250px;
 }
 
 .section-nav-item {
@@ -148,7 +159,6 @@ p {
 }
 
 .togglebox {
-	margin: 0px 40px;
 	max-height: 100%;
 	height: 100%;
 	overflow: hidden;
@@ -177,7 +187,7 @@ p {
 	display: block;
 	height: 85%;
 	width: auto;
-	margin: 0px 20px;
+	margin: 0px 25px;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;

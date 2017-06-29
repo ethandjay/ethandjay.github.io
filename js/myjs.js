@@ -72,9 +72,22 @@ $(document).on('click', '.section-link', function(event) {
         scrollTop: $($(this).closest('.section')).offset().top - ($(window).height() - $(this).closest('.section').height())/2
     }, 500);
 
-    $('.toggleable').addClass('inactive-content');
-    $( $.attr(this, 'href') ).removeClass('inactive-content');
+    $( $(this).attr('href') ).animate({ opacity: 1 });
+    $('.toggleable').not( $(this).attr('href') ).animate({ opacity: 0});
 
+    $('.toggleable').addClass('inactive-content');
+    $( $(this).attr('href') ).removeClass('inactive-content');
+
+});
+
+$(document).ready(function() {
+	$('.toggleable').each(function() {
+    	if ($(this).hasClass('inactive-content')){
+    		$(this).css('opacity') = 0;
+    	} else {
+    		$(this).css('opacity') = 1;
+    	}
+    });
 });
 
 $(window).on('load', function () {
