@@ -55,15 +55,9 @@ p {
 	max-width: auto;
 }
 
-@media screen and (max-height: 456px) {
-    .carousel-item {
-        height: 456px;
-    }
-}
-
 .overfit {
 	object-fit: cover;
-	height: 110vh;
+	min-height: 110vh;
 }
 
 .nav-text {
