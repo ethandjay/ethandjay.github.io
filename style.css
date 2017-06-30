@@ -175,8 +175,8 @@ p {
 }
 
 .review-thumb {
-	max-height: 120px;
-	max-width: 120px;
+	max-height: 115px;
+	max-width: 115px;
 	border-radius: 10%;
 	opacity: .5;
 	transition: opacity .5s;
@@ -201,6 +201,7 @@ p {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
+	margin-right: 15px;
 
 }
 

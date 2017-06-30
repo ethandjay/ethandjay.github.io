@@ -32,7 +32,12 @@ var scrollEvents = function() {
 	});
 }
 
-$(document).ready(scrollEvents);
+$(document).ready( function () {
+	
+	scrollEvents();
+
+	$('.butt').height( $(window).height()/2 - $('.section').last().height()/2 );
+});
 //$(window).scroll(scrollEvents);
 
 var userScrolled = false;
@@ -56,7 +61,7 @@ $(document).on('click', '.sidebar', function(event) {
 	history.pushState(null, null, $.attr(this, 'href'));
 
     $('body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top - ($(window).height() - $('.section').height())/2
+        scrollTop: $( $(this).attr('href') ).offset().top - $(window).height()/2 + $($(this).attr('href')).outerHeight()/2
     }, 500);
 });
 
