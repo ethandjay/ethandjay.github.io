@@ -89,7 +89,7 @@ p {
 	-moz-transition: background-color .25s;
 }
 
-.nav-item:hover {
+.nav-item:hover, .nav-item.hovered {
 	background-color: #f6f6f6;
 
 }
@@ -135,6 +135,7 @@ p {
 	overflow: scroll;
 	pointer-events: auto;
 	border-radius: .25rem;
+	min-height: 373px;
 }
 
 .section-text {
@@ -146,10 +147,6 @@ p {
 .right-flyer, .left-flyer {
 	display: inline-block;
 	transition: transform 1s cubic-bezier(.72,.01,.8,.18);
-}
-
-.flyer-post-transition {
-	transition: transform .5s;
 }
 
 .right-anim {
