@@ -97,9 +97,14 @@ $(window).on('load', function () {
 });
 
 $(document).ready(function () {
-	$('.nameplate').hover( function() {
-		$('.right-flyer').toggleClass('right-anim');
-		$('.left-flyer').toggleClass('left-anim');
+	$('.nameplate').on('mouseover', function() {
+		$('.right-flyer').removeClass('right-anim');
+		$('.left-flyer').removeClass('left-anim');
+	});
+
+	$('.nameplate').on('mouseout', function() {
+		$('.right-flyer').addClass('right-anim');
+		$('.left-flyer').addClass('left-anim');
 	});
 
 	$('.rev-text').hover( function () {
