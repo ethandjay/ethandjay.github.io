@@ -2,12 +2,6 @@ var scrollEvents = function() {
 	var scrollHeight = $(window).scrollTop();
 	var set = $('.section');
 	$('.section').each(function(index) {
-		if (index == set.length-1 && ($(window).scrollTop() + $(window).height()) == $(document).height()) {
-			$(this).animate({ opacity: 1 });
-		}
-		else if (index == set.length-1 && ($(window).scrollTop() + $(window).height()) != $(document).height() && $(this).css("opacity") == 1) {
-			$(this).animate({ opacity: .75 });
-		} else {
 			$(this).css({
 				opacity: function () {
 					var windowHeight = $(window).height();
@@ -17,9 +11,8 @@ var scrollEvents = function() {
 
 					return 1 - Math.abs((windowHeight/2 - elemOffsetFromTop - elemHeight/2) / (windowHeight/2 + 300));
 				}
-			})
-		}
-	})
+			});
+		});
 	if ($(window).scrollTop() > 50) {
 		$('.carousel-overlay').fadeOut();
 	} else {
@@ -36,7 +29,7 @@ $(document).ready( function () {
 	
 	scrollEvents();
 
-	$('.butt').height( $(window).height()/2 - $('.section').last().height()/2 );
+	$('.butt').height( $(window).height()/2 - $('.section').last().outerHeight(true)/2 );
 });
 //$(window).scroll(scrollEvents);
 
