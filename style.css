@@ -148,6 +148,10 @@ p {
 	transition: transform 1s cubic-bezier(.72,.01,.8,.18);
 }
 
+.flyer-post-transition {
+	transition: transform .5s;
+}
+
 .right-anim {
 	transform: translateX(300px);
 }
@@ -182,7 +186,7 @@ p {
 	transition: opacity .5s;
 }
 
-.review-thumb:hover {
+.review-thumb:hover, .review-thumb.hovered {
 	opacity: 1;
 }
 

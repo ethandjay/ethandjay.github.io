@@ -85,30 +85,26 @@ $(document).on('click', '.section-link', function(event) {
 
 });
 
-$(document).ready(function() {
-	$('.toggleable').each(function() {
-    	if ($(this).hasClass('inactive-content')){
-    		$(this).css('opacity') = 0;
-    	} else {
-    		$(this).css('opacity') = 1;
-    	}
-    });
-});
-
 $(window).on('load', function () {
 	setTimeout(function(){
 		$('.left-flyer').addClass('left-anim');
 		$('.right-flyer').addClass('right-anim');
 	}, 2000);
-	// setTimeout(function(){
-	// 	$('.left-flyer').css({ opacity: 0 });
-	// 	$('.right-flyer').css({ opacity: 0 });
-	// }, 3000)
+
+	setTimeout( function() {
+		$('.left-flyer, .right-flyer').css({'transition':'transform .5s'});
+	}, 3000);
 });
 
-$('.nameplate').on('mouseover', function() {
-	$('.right-flyer').removeClass('right-anim');
-	$('.left-flyer').removeClass('left-anim');
-})
+$(document).ready(function () {
+	$('.nameplate').hover( function() {
+		$('.right-flyer').toggleClass('right-anim');
+		$('.left-flyer').toggleClass('left-anim');
+	});
+
+	$('.rev-text').hover( function () {
+		$('.review-thumb').toggleClass('hovered');
+	});
+});
 
 
