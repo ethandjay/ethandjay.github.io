@@ -7,7 +7,6 @@ var sidebarTrack = function() {
 			minOffset = elemOffsetFromMid;
 			elem = $(this);
 		}
-		console.log("Section " + i + " is " + elemOffsetFromMid + " from mid\n");
 	})
 
 	$('.nav-item').removeClass("hovered");
@@ -15,9 +14,6 @@ var sidebarTrack = function() {
 		$('[href="#'+elem.attr('id')+'"]').parent().addClass("hovered");
 	}
 }
-
-
-
 
 var scrollEvents = function() {
 	var scrollHeight = $(window).scrollTop();
@@ -133,7 +129,7 @@ $(document).ready(function () {
 	});
 
 	$('.rev-text').hover( function () {
-		$('.review-thumb').toggleClass('hovered');
+		$('.review-pic').toggleClass('hovered');
 	});
 });
 

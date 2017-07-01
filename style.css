@@ -41,7 +41,7 @@ p {
 }
 
 .col {
-	overflow: scroll;
+	overflow: auto;
 }
 
 .fixbox {
@@ -140,7 +140,7 @@ p {
 
 .section-text {
 	position: relative;
-	overflow: scroll;
+
 	margin: 0px 20px;
 }
 
@@ -166,7 +166,6 @@ p {
 .togglebox {
 	max-height: 100%;
 	height: 100%;
-	overflow: scroll;
 }
 
 .inactive-content {
@@ -176,14 +175,21 @@ p {
 }
 
 .review-thumb {
-	max-height: 115px;
-	max-width: 115px;
+	flex: 1 1 50px;
+	display: flex;
+	min-width: 50px;
+	margin: 10px 10px;
+}
+
+.review-pic {
 	border-radius: 10%;
 	opacity: .5;
 	transition: opacity .5s;
+	max-width: 100%;
+	height: auto;
 }
 
-.review-thumb:hover, .review-thumb.hovered {
+.review-pic:hover, .review-pic.hovered {
 	opacity: 1;
 }
 
@@ -201,14 +207,10 @@ p {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	flex-wrap: wrap;
 	margin-right: 15px;
 	padding-right: 10px;
+	flex-flow: row wrap;
 
-}
-
-.review-container {
-	margin: 10px 0;
 }
 
 .wulogo {
