@@ -9,7 +9,7 @@ var sidebarTrack = function() {
 		}
 	})
 
-	$('.nav-item').removeClass("hovered");
+	$('.nav-item-onpage').removeClass("hovered");
 	if($(window).scrollTop() > 50){
 		$('[href="#'+elem.attr('id')+'"]').parent().addClass("hovered");
 	}
@@ -77,11 +77,19 @@ $(document).on('click', '.sidebar', function(event) {
     }, 500);
 });
 
+$(document).on('click', '.sidebar-music', function(event) {
+
+	//prevents hash flicker
+    event.preventDefault();
+
+    $('.music-container').toggleClass('music-container-min');
+})
+
 $(document).ready( function() {
-	$('.nav-item').hover( function(event) {
-		$('.nav-item').not(this).removeClass('hovered');
+	$('.nav-item-onpage').hover( function(event) {
+		$('.nav-item-onpage').not(this).removeClass('hovered');
 	});
-	$('.nav-item').mouseout( function () {
+	$('.nav-item-onpage').mouseout( function () {
 		sidebarTrack();
 	});
 });
