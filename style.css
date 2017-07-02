@@ -165,6 +165,7 @@ p {
 
 .contact-grid {
 	flex: 1 1 25px;
+	flex-direction: row !important;
 }
 
 .contact-cell {
