@@ -63,7 +63,7 @@ setInterval(function() {
   	scrollEvents();
     userScrolled = false;
   }
-}, 50);
+}, 30);
 
 $(document).on('click', '.sidebar', function(event) {
 
@@ -77,6 +77,7 @@ $(document).on('click', '.sidebar', function(event) {
 });
 
 $(window).resize(function() {
+	scrollEvents();
 	var y = $(window).height() - ($('.nav-item-music').offset().top - $(window).scrollTop() + $('.nav-item-music').outerHeight());
 	if (y < 0){
 		y = 0;
