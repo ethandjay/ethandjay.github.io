@@ -65,7 +65,6 @@ setInterval(function() {
   }
 }, 50);
 
-
 $(document).on('click', '.sidebar', function(event) {
 
 	//prevents hash flicker
@@ -95,6 +94,7 @@ $(document).on('click', '.sidebar-music', function(event) {
 
 $(document).ready( function() {
 	$(window).trigger('resize');
+	$('#email').attr('href', 'mailto:ethandjay@gmail.com');
 
 
 	$('.nameplate').on('mouseover', function() {
