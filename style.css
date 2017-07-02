@@ -163,6 +163,10 @@ p {
 	border-radius: .25rem;
 }
 
+.contact-grid {
+	flex: 1 1 25px;
+}
+
 .contact-cell {
 	padding: 0;
 	margin: 5px 10px;
