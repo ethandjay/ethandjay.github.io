@@ -104,6 +104,14 @@ p {
 
 }
 
+@media only screen and (max-width: 375px) {
+	.section {
+		padding: 5px;
+		margin: 5px;
+	}
+
+}
+
 .nav-text {
 	display: block;
 	margin-top: auto;
