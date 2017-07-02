@@ -104,10 +104,10 @@ p {
 
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 500px) {
 	.section {
-		padding: 5px;
-		margin: 5px;
+		padding: 5px !important;
+		margin: 20px 5px !important;
 	}
 
 }
