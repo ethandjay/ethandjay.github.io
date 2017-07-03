@@ -53,7 +53,7 @@ p {
 	margin-top: 15px;
 }
 
-.col {
+.section-col {
 	flex: 1 1 200px;
 	overflow: auto;
 }
@@ -229,7 +229,6 @@ p {
 
 .section {
 	display: flex;
-	flex-flow: wrap;
 	transition: height 1s;
   	align-items: center; 
   	justify-content: center;
@@ -239,6 +238,10 @@ p {
 	pointer-events: auto;
 	border-radius: .25rem;
 	min-height: 373px;
+}
+
+#experience {
+	flex-flow: row wrap;
 }
 
 .section-text {
@@ -318,7 +321,6 @@ p {
 
 .skill-container {
 	margin: auto auto;
-
 }
 
 .skill-img {
@@ -332,6 +334,10 @@ p {
 
 .skill-img:hover {
 	opacity: 1;
+}
+
+.skill-row {
+	justify-content: center;
 }
 
 .wulogo {
