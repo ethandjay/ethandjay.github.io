@@ -48,6 +48,38 @@ p {
 	font-size: 16px;
 }
 
+.repo-link {
+	margin: 0 20%;
+	font-family: 'Yrsa', serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: #0275d8;
+	text-decoration: none;
+	touch-action: none;
+}
+
+.repo-link:hover {
+	color: #275399;
+	text-decoration: none;
+	touch-action: none;
+}
+
+.project-sub {
+	margin: auto auto;
+	color: #325791;
+	font-family: 'Yrsa', serif;
+	font-weight: 500;
+	font-size: 40px;
+	text-decoration: none;
+	touch-action: none;
+}
+
+.project-sub:hover {
+	color: #223b63;
+	text-decoration: none;
+	touch-action: none;
+}
+
 .list-head {
 	margin-bottom: 0px;
 	margin-top: 15px;
@@ -246,7 +278,6 @@ p {
 
 .section-text {
 	position: relative;
-
 	margin: 0px 20px;
 }
 
@@ -320,7 +351,17 @@ p {
 }
 
 .skill-container {
-	margin: auto auto;
+
+}
+
+#skills {
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: row wrap;
+}
+
+.skill-text {
+
 }
 
 .skill-img {

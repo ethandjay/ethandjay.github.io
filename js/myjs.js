@@ -108,6 +108,14 @@ $(document).ready( function() {
 		$('.left-flyer').addClass('left-anim');
 	});
 
+	$('.skill-img').on('mouseover', function () {
+		$('.skill').text($(this).attr("alt"));
+		$('.skill').css({ opacity: 1 });
+	});
+	$('.skill-img').on('mouseout', function () {
+		$('.skill').css({ opacity: 0 });
+	});
+
 	$('.rev-text').hover( function () {
 		$('.review-pic').toggleClass('hovered');
 	});
