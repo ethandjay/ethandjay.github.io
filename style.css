@@ -48,14 +48,13 @@ p {
 	font-size: 16px;
 }
 
-.repo-link {
+.repo-link, .repo-link:visited, .repo-link:active, .repo-link:link {
 	margin: 0 20%;
 	font-family: 'Yrsa', serif;
 	font-weight: 400;
 	font-size: 20px;
 	color: #0275d8;
 	text-decoration: none;
-	touch-action: none;
 }
 
 .repo-link:hover {
@@ -64,20 +63,18 @@ p {
 	touch-action: none;
 }
 
-.project-sub {
+.project-sub, .project-sub:visited, .project-sub:active, .project-sub:link {
 	margin: auto auto;
 	color: #325791;
 	font-family: 'Yrsa', serif;
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 20px;
 	text-decoration: none;
-	touch-action: none;
 }
 
 .project-sub:hover {
 	color: #223b63;
 	text-decoration: none;
-	touch-action: none;
 }
 
 .list-head {
@@ -143,6 +140,23 @@ p {
 	}
 
 }
+
+@media only screen and (max-width: 1416px) {
+	.nameplate {
+		font-size: 36px !important;
+	}
+
+}
+
+@media only screen and (max-width: 1135px) {
+	.nameplate {
+		font-size: 28px !important;
+	}
+	.nav-item {
+		font-size: 16px !important;
+	}
+}
+
 
 .nav-text {
 	display: block;
@@ -350,8 +364,8 @@ p {
 	flex-flow: row wrap;
 }
 
-.skill-container {
-
+.skill {
+	min-width: 170px;
 }
 
 #skills {
