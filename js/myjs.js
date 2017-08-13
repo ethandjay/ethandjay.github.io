@@ -40,7 +40,7 @@ var scrollEvents = function() {
 
 	// Background parallax effect
 	$('.overfit').css('transform', function () {
-		var val = 10 - (1.5*(($(document).height() - scrollHeight) / $(document).height())-.5)*10;
+		var val = 9 - (1.5*(($(document).height() - scrollHeight) / $(document).height())-.5)*9;
 		return "translateY(" + -val + "vh)";
 	});
 
