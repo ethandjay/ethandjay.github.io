@@ -1,3 +1,4 @@
+// Making the nav elements highlight themselves when their section is scrolled to
 var sidebarTrack = function() {
 	var minOffset = $(window).height();
 	var elem = null;
@@ -15,6 +16,7 @@ var sidebarTrack = function() {
 	}
 }
 
+// Function package for all events dependent on scroll behavior
 var scrollEvents = function() {
 	var scrollHeight = $(window).scrollTop();
 	var set = $('.section');
@@ -36,6 +38,7 @@ var scrollEvents = function() {
 		$('.carousel-overlay').fadeIn(200);
 	}
 
+	// Background parallax effect
 	$('.overfit').css('transform', function () {
 		var val = 10 - (1.5*(($(document).height() - scrollHeight) / $(document).height())-.5)*10;
 		return "translateY(" + -val + "vh)";
@@ -48,10 +51,14 @@ $(document).ready( function () {
 	
 	scrollEvents();
 
+	// Resize bottom of page padding
 	$('.butt').height( $(window).height()/2 - $('.section').last().outerHeight(true)/2 );
 });
 //$(window).scroll(scrollEvents);
 
+
+
+// Attempt at slowing the firing of scroll events
 var userScrolled = false;
 
 $(window).scroll(function() {
@@ -65,6 +72,8 @@ setInterval(function() {
   }
 }, 30);
 
+
+// Nav go-to
 $(document).on('click', '.sidebar', function(event) {
 
 	//prevents hash flicker
@@ -85,6 +94,8 @@ $(window).resize(function() {
 	$('.music-container').css({ "max-height": y });
 });
 
+
+// Expand music panel
 $(document).on('click', '.sidebar-music', function(event) {
 
 	//prevents hash flicker
