@@ -253,6 +253,10 @@ p {
 	flex-flow: row wrap;
 }
 
+.section-me {
+	flex-grow: .3;
+}
+
 .section-text {
 	position: relative;
 	margin: 0px 20px;
@@ -333,7 +337,7 @@ p {
 }
 
 #skills {
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
 }
