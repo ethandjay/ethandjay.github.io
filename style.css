@@ -212,11 +212,53 @@ p {
 	color: #a0a0a0;
 	font-style: italic;
 	margin: 15px 0px;
+	position: relative;
 }
 
 .music-img {
 	width: 100%;
 	height: auto;
+	position: absolute;
+	right: 0;
+}
+
+.music-sizer {
+	height: 1375px;
+}
+
+.music-img-wrapper {
+	position: relative;
+	min-height: 100%;
+	overflow: visible;
+}
+
+.play-button {
+	display: block;
+	opacity: 0;
+	height: auto;
+	max-height: 90px;
+	max-width: 90px;
+	margin: 23.5px auto;
+	transition: opacity .2s;
+}
+
+.play-button img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.play-button:hover {
+	opacity: .5;
+}
+
+.play-overlay {
+	min-width: 100%;
+	position: absolute;
+}
+
+.play-flex {
+	display: flex;
+	justify-content: space-around;
 }
 
 .content-container {

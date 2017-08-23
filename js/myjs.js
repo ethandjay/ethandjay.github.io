@@ -72,6 +72,10 @@ setInterval(function() {
   }
 }, 30);
 
+$(document).on('click', '.play-button', function(event){
+	$.get("https://api.spotify.com/v1/albums/3YDm8Vu6IOjjVdLNHlJtj0");
+});
+
 
 // Nav go-to
 $(document).on('click', '.sidebar', function(event) {
@@ -87,11 +91,13 @@ $(document).on('click', '.sidebar', function(event) {
 
 $(window).resize(function() {
 	scrollEvents();
+
 	var y = $(window).height() - ($('.nav-item-music').offset().top - $(window).scrollTop() + $('.nav-item-music').outerHeight());
 	if (y < 0){
 		y = 0;
 	}
 	$('.music-container').css({ "max-height": y });
+	$('.play-overlay').css({ "max-width": $('.music-img').width() });
 });
 
 
