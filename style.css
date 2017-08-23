@@ -48,19 +48,8 @@ p {
 	font-size: 16px;
 }
 
-.repo-link, .repo-link:visited, .repo-link:active, .repo-link:link {
-	margin: 0 20%;
-	font-family: 'Yrsa', serif;
-	font-weight: 400;
-	font-size: 20px;
-	color: #0275d8;
-	text-decoration: none;
-}
-
-.repo-link:hover {
-	color: #275399;
-	text-decoration: none;
-	touch-action: none;
+.repo-link {
+	margin: 0 20% !important;
 }
 
 .project-sub, .project-sub:visited, .project-sub:active, .project-sub:link {
