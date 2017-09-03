@@ -111,7 +111,6 @@ $(document).on('click', '.sidebar-music', function(event) {
 })
 
 $(document).ready( function() {
-	$(window).trigger('resize');
 	$('#email').attr('href', 'mailto:ethandjay@gmail.com');
 
 
@@ -143,6 +142,7 @@ $(document).ready( function() {
 	$('.nav-item-onpage').mouseout( function () {
 		sidebarTrack();
 	});
+	$(window).trigger('resize');
 });
 
 $(document).on('click', '.section-link', function(event) {
