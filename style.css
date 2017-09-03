@@ -20,7 +20,7 @@ h2 {
 	font-family: 'Yrsa', serif;
 	font-weight: 400;
 	font-size: 20px;
-	margin-top: 12px;
+	margin-top: 8px;
 	margin-bottom: 12px;
 }
 
@@ -275,7 +275,7 @@ p {
 	padding: 30px;
 	pointer-events: auto;
 	border-radius: .25rem;
-	min-height: 373px;
+	min-height: 384px;
 	flex-flow: row wrap;
 }
 
@@ -486,7 +486,7 @@ p {
 	}
 }
 
-@media only screen and (max-width: 1416px) {
+@media only screen and (max-width: 1497px) {
 	.nameplate {
 		font-size: 36px !important;
 	}
