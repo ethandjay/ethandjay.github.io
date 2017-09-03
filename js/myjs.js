@@ -142,7 +142,6 @@ $(document).ready( function() {
 	$('.nav-item-onpage').mouseout( function () {
 		sidebarTrack();
 	});
-	$(window).trigger('resize');
 });
 
 $(document).on('click', '.section-link', function(event) {
@@ -174,5 +173,6 @@ $(window).on('load', function () {
 	setTimeout( function() {
 		$('.left-flyer, .right-flyer').css({'transition':'transform .5s'});
 	}, 3000);
+	$(window).trigger('resize');
 });
 
