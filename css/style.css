@@ -100,7 +100,7 @@ p {
 }
 
 .loading {
-	filter: blur(50px);
+	filter: blur(20px);
 }
 
 .overfit {
