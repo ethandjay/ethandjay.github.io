@@ -188,14 +188,19 @@ $(window).on('load', function () {
 
 	// Dynamically blur-load carousel images
 
-	blurLoad(1, "highway");
-	blurLoad(2, "chairs");
-	blurLoad(3, "roof");
-	blurLoad(4, "wires");
-	blurLoad(5, "blur");
-	blurLoad(6, "rocks");
+	// All large pictures to be loaded
+	var bigPics = [
+		"highway",
+		"chairs",
+		"roof",
+		"wires",
+		"blur",
+		"rocks"
+	];
 
-
+	for (var i = 0; i < bigPics.length; i++){
+		blurLoad(i, bigPics[i])
+	}
 });
 
 
