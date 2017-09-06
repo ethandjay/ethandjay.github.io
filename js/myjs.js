@@ -186,7 +186,7 @@ $(window).on('load', function () {
 	$(window).trigger('resize');
 
 
-	// Dynamically blur-load carousel images
+	// Dynamically blur-load (carousel) images
 
 	// All large pictures to be loaded
 	var bigPics = [
