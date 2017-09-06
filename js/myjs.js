@@ -164,6 +164,16 @@ $(document).on('click', '.section-link', function(event) {
 
 });
 
+var blurLoad = function(num, name) {
+	var img = new Image();
+	img.src = "img/" + name +".jpg";
+
+	img.onload = function() {
+		$('#cimg-' + num).removeClass("loading");
+		$('#cimg-' + num).attr("src", img.src);
+	}
+}
+
 $(window).on('load', function () {
 	setTimeout(function(){
 		$('.left-flyer').addClass('left-anim');
@@ -174,5 +184,35 @@ $(window).on('load', function () {
 		$('.left-flyer, .right-flyer').css({'transition':'transform .5s'});
 	}, 3000);
 	$(window).trigger('resize');
+
+
+	// Dynamically blur-load carousel images
+
+	blurLoad(1, "highway");
+	blurLoad(2, "chairs");
+	blurLoad(3, "roof");
+	blurLoad(4, "wires");
+	blurLoad(5, "blur");
+	blurLoad(6, "rocks");
+
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -95,6 +95,14 @@ p {
 	max-width: auto;
 }
 
+.carousel-img {
+	transition: filter 1s;
+}
+
+.loading {
+	filter: blur(50px);
+}
+
 .overfit {
 	object-fit: cover;
 	min-height: 110vh;
