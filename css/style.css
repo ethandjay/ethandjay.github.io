@@ -121,8 +121,7 @@ p {
 }
 
 .carousel-img {
-	transition: filter 1s;
-	transition: opacity 1s;
+	transition: filter 1s, opacity 1s;
 }
 
 .show-map {
@@ -131,7 +130,7 @@ p {
 }
 
 .loading {
-	filter: blur(20px);
+	filter: blur(50px);
 }
 
 .overfit {
