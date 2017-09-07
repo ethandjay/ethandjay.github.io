@@ -169,8 +169,8 @@ var blurLoad = function(num, name) {
 	img.src = "img/" + name +".jpg";
 
 	img.onload = function() {
-		$('#cimg-' + num).removeClass("loading");
 		$('#cimg-' + num).attr("src", img.src);
+		$('#cimg-' + num).removeClass("loading");
 	}
 }
 
