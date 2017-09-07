@@ -266,7 +266,12 @@ p {
 }
 
 .role-title {
-	font-size: 32px;
+	font-size: 34px;
+}
+
+.role-subtitle {
+	margin-top: 8px;
+	font-size: 28px;
 }
 
 .bumper {
