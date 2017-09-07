@@ -17,6 +17,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css?v=1.621">
   <script type="text/javascript" src="js/myjs.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALZuuoVElXhtrBIKN5fJFPBYjtg72yd5U&callback=initMap" async defer></script>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -113,7 +114,7 @@
       </div>
       <div class="col">
         <div id="carouselControls" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
-          <ol class="carousel-overlay carousel-indicators">
+          <ol class="carousel-overlay carousel-indicators control">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -122,33 +123,36 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
           </ol>
           <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
+            <div class="carousel-item active" id="citem0">
               <img src="img/highway-sm.jpg" class="carousel-img d-block img-fluid overfit loading" alt="first" id="cimg-0">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" id="citem1">
               <img src="img/chairs-sm.jpg" class="carousel-img d-block img-fluid overfit loading" alt="second" id="cimg-1">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" id="citem2">
               <img src="img/roof-sm.jpg" class="carousel-img d-block img-fluid overfit loading" alt="third" id="cimg-2">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" id="citem3">
               <img src="img/wires-sm.jpg" class="carousel-img vd-block img-fluid overfit loading" alt="fourth" id="cimg-3">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" id="citem4">
               <img src="img/blur-sm.jpg" class="carousel-img d-block img-fluid overfit loading" alt="fifth" id="cimg-4">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" id="citem5">
               <img src="img/rocks-sm.jpg" class="carousel-img d-block img-fluid overfit loading" alt="sixth" id="cimg-5">
             </div>
           </div>
-          <a class="carousel-overlay carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+          <a class="carousel-overlay carousel-control-prev control" href="#carouselControls" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="carousel-overlay carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+          <a class="carousel-overlay carousel-control-next control" href="#carouselControls" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
+          <div class="carousel-overlay where">
+            <h3>Where was this taken?</h3>
+          </div>
         </div>
       </div>
     </div>
@@ -340,6 +344,65 @@
               </div>
               <div class="row">
                 <a  class="project-sub" target="_blank" href="http://kwur.com/" style="pointer-events:none"><del>KWUR 90.3 FM</del> (under construction, check back soon)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section" id="skills">
+          <div class="section-text skill-text">
+            <h1 class="text-center">Skills</h1>
+            <p class="skill text-center">&nbsp;</p>
+          </div>
+          <div class="skill-container">
+            <div class="row skill-row">
+              <div class="col-2">
+                <img class="skill-img" src="img/skills/cpp.png" alt="C++">
+              </div>
+              <div class="col-2">
+               <img class="skill-img" src="img/skills/java.png" alt="Java">
+              </div>
+              <div class="col-2">
+               <img class="skill-img" src="img/skills/python.png" alt="Python">
+              </div>
+              <div class="col-2">
+               <img class="skill-img" src="img/skills/php.png" alt="PHP">
+              </div>
+              <div class="col-2">
+               <img class="skill-img" src="img/skills/opencl.png" alt="OpenCL">
+              </div>
+            </div>
+            <div class="row skill-row">
+              <div class="col-2">
+               <img class="skill-img" src="img/skills/js.png" alt="Javascript">
+              </div>
+              <div class="col-2">
+               <img class="skill-img" src="img/skills/jquery.png" alt="JQuery">
+              </div>
+              <div class="col-2">
+               <img class="skill-img" src="img/skills/bootstrap.png" alt="Bootstrap">
+              </div>
+              <div class="col-2">
+               <img class="skill-img" src="img/skills/html.png" alt="HTML5">
+              </div>
+              <div class="col-2">
+               <img class="skill-img" src="img/skills/css.png" alt="CSS3">
+              </div>
+            </div>
+            <div class="row skill-row">
+              <div class="col-2">
+               <img class="skill-img" src="img/skills/git.png" alt="Git">
+              </div>
+              <div class="col-2">
+               <img class="skill-img" src="img/skills/aws.png" alt="Amazon Web Services">
+              </div>
+              <div class="col-2">
+               <img class="skill-img" src="img/skills/wordpress.png" alt="WordPress">
+              </div>
+              <div class="col-2">
+               <img class="skill-img" src="img/skills/mysql.png" alt="MySQL">
+              </div>
+              <div class="col-2">
+               <img class="skill-img" src="img/skills/photoshop.png" alt="Photoshop">
               </div>
             </div>
           </div>

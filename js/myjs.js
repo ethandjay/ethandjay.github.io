@@ -201,9 +201,25 @@ $(window).on('load', function () {
 	for (var i = 0; i < bigPics.length; i++){
 		blurLoad(i, bigPics[i])
 	}
+
 });
 
+var map;
+var initMap = function () {
+	var guts = $('#citem0').html();
+	map = new google.maps.Map(document.getElementById('citem0'), {
+		center: {lat: -34.397, lng: 150.644},
+		zoom: 8
+    });
+    $('#citem0').append(guts);
+}
 
+$(document).on('click', '.where', function () {
+	$('.carousel-item.active').find('img').toggleClass('show-map');
+	$('.control').toggleClass('none');
+	$('.where').find('h3').text($('.where').find('h3').text() == 'Where was this taken?' ? 'Go back to image' : 'Where was this taken?');
+	google.maps.event.trigger(map, "resize");
+});
 
 
 

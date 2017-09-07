@@ -95,8 +95,39 @@ p {
 	max-width: auto;
 }
 
+.where {
+	min-height: 35px;
+	min-width: 158px;
+	background-color: #fafafa;
+	position: absolute;
+	top: 0;
+	right: 47%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: -5px;
+	border-radius: .25em;
+	opacity: .5;
+	transition: opacity .5s;
+}
+
+.where:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.where > h3 {
+	font-style: normal;
+	margin-top: 10px;
+}
+
 .carousel-img {
 	transition: filter 1s;
+	transition: opacity 1s;
+}
+
+.show-map {
+	opacity: 0;
+	pointer-events: none;
 }
 
 .loading {
@@ -109,6 +140,10 @@ p {
     -webkit-transform: translateZ(-999px) scale(2);
     transform: translateZ(-999px) scale(2);
     z-index: 3;
+}
+
+.none {
+	display: none;
 }
 
 .nav-text {
@@ -376,7 +411,8 @@ p {
 }
 
 .skill {
-	min-width: 170px;
+	min-width: 145px;
+	margin-bottom: 0;
 }
 
 #skills {
@@ -388,7 +424,7 @@ p {
 .skill-img {
 	width: 50px;
 	height: auto;
-	margin: 15px 10px;
+	margin: 15px auto;
 	opacity: .5;
 
 	transition: opacity .5s;
