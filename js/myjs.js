@@ -20,7 +20,8 @@ var sidebarTrack = function() {
 var scrollEvents = function() {
 	var scrollHeight = $(window).scrollTop();
 	var set = $('.section');
-	$('.section').each(function(index) {
+	if ($(window).width() > 1020) {
+		$('.section').each(function(index) {
 			$(this).css({
 				opacity: function () {
 					var windowHeight = $(window).height();
@@ -32,6 +33,9 @@ var scrollEvents = function() {
 				}
 			});
 		});
+	} else {
+		$('.section').animate({opacity:1});
+	}
 	if ($(window).scrollTop() > 50) {
 		$('.carousel-overlay').fadeOut();
 	} else {
