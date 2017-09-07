@@ -201,11 +201,14 @@ $(window).on('load', function () {
 	for (var i = 0; i < bigPics.length; i++){
 		blurLoad(i, bigPics[i])
 	}
-
 });
 
 var map;
 var initMap = function () {
+	if($('#cimg-0').hasClass('loading')){
+		setTimeout(initMap, 500);
+		return;
+	}
 	var guts = $('#citem0').html();
 	map = new google.maps.Map(document.getElementById('citem0'), {
 		center: {lat: -34.397, lng: 150.644},
