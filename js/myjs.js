@@ -166,12 +166,11 @@ $(document).on('click', '.section-link', function(event) {
 
 var blurLoad = function(num, name) {
 	var img = new Image();
-	img.src = "img/" + name +".jpg";
-
 	img.onload = function() {
 		$('#cimg-' + num).attr("src", img.src);
 		$('#cimg-' + num).removeClass("loading");
 	}
+	img.src = "img/" + name +".jpg";
 }
 
 $(window).on('load', function () {
