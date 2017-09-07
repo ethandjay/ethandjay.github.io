@@ -121,7 +121,7 @@ p {
 }
 
 .carousel-img {
-	transition: filter 1s, opacity 1s !important;
+	transition: filter 1s ease-out, opacity 1s;
 }
 
 .show-map {
