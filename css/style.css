@@ -419,6 +419,11 @@ p {
 	margin-bottom: 0;
 }
 
+.skill-container {
+	padding: 25px;
+	padding-right: 40px;
+}
+
 #skills {
 	justify-content: center;
 	align-items: center;
