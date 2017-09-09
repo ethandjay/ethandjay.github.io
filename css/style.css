@@ -129,6 +129,11 @@ p {
 	pointer-events: none;
 }
 
+.gmap-mine {
+	z-index: 100;
+	transition: opacity 1s;
+}
+
 .loading {
 	filter: blur(20px);
 }

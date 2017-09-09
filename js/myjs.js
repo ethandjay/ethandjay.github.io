@@ -207,24 +207,34 @@ $(window).on('load', function () {
 });
 
 var map;
+var marker
 var initMap = function () {
-	if($('#cimg-0').hasClass('loading')){
-		setTimeout(initMap, 500);
-		return;
-	}
+	var highway = {lat: 35.456481, lng: -112.169454};
 	var guts = $('#citem0').html();
 	map = new google.maps.Map(document.getElementById('citem0'), {
-		center: {lat: -34.397, lng: 150.644},
-		zoom: 8
+		center: highway,
+		zoom: 10
     });
-    $('#citem0').append(guts);
+	marker = new google.maps.Marker({
+		position: highway,
+		map: map
+    });
+    $('#citem0').append(guts).find('div').addClass('gmap-mine');
+
 }
 
 $(document).on('click', '.where', function () {
-	$('.carousel-item.active').find('img').toggleClass('show-map');
-	$('.control').toggleClass('none');
 	$('.where').find('h3').text($('.where').find('h3').text() == 'Where was this taken?' ? 'Go back to image' : 'Where was this taken?');
-	google.maps.event.trigger(map, "resize");
+	$('.control').toggleClass('show-map');
+	if(!$('.carousel-item.active').has('div').length){
+		initMap();
+	} else {
+		$('.carousel-item.active').find('div').toggleClass('show-map');
+	}
+	// $('.carousel-item.active').find('img').toggleClass('show-map');
+	// $('.control').toggleClass('none');
+	
+	// google.maps.event.trigger(map, "resize");
 });
 
 
