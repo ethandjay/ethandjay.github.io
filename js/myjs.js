@@ -208,7 +208,7 @@ $(window).on('load', function () {
 
 var map;
 var marker
-var initMap = function () {
+var initMap = function (image) {
 	var highway = {lat: 35.456481, lng: -112.169454};
 	var guts = $('#citem0').html();
 	map = new google.maps.Map(document.getElementById('citem0'), {
@@ -227,7 +227,7 @@ $(document).on('click', '.where', function () {
 	$('.where').find('h3').text($('.where').find('h3').text() == 'Where was this taken?' ? 'Go back to image' : 'Where was this taken?');
 	$('.control').toggleClass('show-map');
 	if(!$('.carousel-item.active').has('div').length){
-		initMap();
+		initMap($('.carousel-item.active'));
 	} else {
 		$('.carousel-item.active').find('div').toggleClass('show-map');
 	}
