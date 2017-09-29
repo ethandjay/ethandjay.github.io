@@ -96,6 +96,7 @@ p {
 }
 
 .where {
+	z-index: 100;
 	min-height: 35px;
 	min-width: 158px;
 	background-color: #fafafa;
@@ -124,14 +125,25 @@ p {
 	transition: filter 1s ease-out, opacity 1s;
 }
 
-.show-map {
+.hide-map {
 	opacity: 0;
 	pointer-events: none;
 }
 
-.gmap-mine {
-	z-index: 100;
+#map-overlay {
+	z-index: 99;
 	transition: opacity 1s;
+	float: right;
+	min-height: 100vh;
+	max-height: 100vh; 
+	min-width: 100%;
+	max-width: 100%;
+	position: absolute;
+	transition: opacity 1s;
+}
+
+#map-shell {
+	height: 100vh;
 }
 
 .loading {

@@ -208,14 +208,23 @@ $(window).on('load', function () {
 
 var map;
 var marker;
+var locations = [
+	{lat: 35.456481, lng: -112.169454},
+	{lat: 31.7666771, lng: 35.1526975},
+	{lat: 9.4047389, lng: -84.1606367},
+	{lat: 29.965577, lng: 35.02962},
+	{lat: 36.0529925, lng: -112.1409521},
+	{lat: 9.3814053, lng: -84.134413}
+];
+var zoom = [10, 12, 15, 13, 14, 15];
+var addMarker = function (image_num) {
+	marker = new google.maps.Marker({
+		position: locations[image_num],
+		map: map
+    });
+}
 var initMap = function (image_num) {
-	var locations = [
-		{lat: 35.456481, lng: -112.169454},
-		{lat: 31.7666771, lng: 35.1526975}
-	];
-	var zoom = [10, 12];
-	var guts = $('#citem' + image_num).html();
-	map = new google.maps.Map(document.getElementById('citem' + image_num), {
+	map = new google.maps.Map(document.getElementById('map-shell'), {
 		center: locations[image_num],
 		zoom: zoom[image_num]
     });
@@ -223,26 +232,22 @@ var initMap = function (image_num) {
 		position: locations[image_num],
 		map: map
     });
-    $('#citem' + image_num).append(guts).find('div').addClass('gmap-mine');
-
 }
 
 $(document).on('click', '.where', function () {
 	$('.where').find('h3').text($('.where').find('h3').text() == 'Where was this taken?' ? 'Go back to image' : 'Where was this taken?');
-	$('.control').toggleClass('show-map');
-	if(!$('.carousel-item.active').has('div').length){
-		$('.carousel-item').each(function() {
-			$(this).removeAttr('style');
-			$(this).find('div').remove();
-		});
-		initMap($('.carousel-item.active').attr('id').slice(-1));
+
+	var currPicID = $('.carousel-item.active').attr('id').slice(-1);
+	console.log(currPicID);
+	if ($('#map-shell').children().length == 0){
+		initMap(currPicID);
 	} else {
-		$('.carousel-item.active').find('div').toggleClass('show-map');
+		map.setCenter(locations[currPicID]);
+		map.setZoom(zoom[currPicID]);
+		addMarker(locations[currPicID]);
 	}
-	// $('.carousel-item.active').find('img').toggleClass('show-map');
-	// $('.control').toggleClass('none');
-	
-	// google.maps.event.trigger(map, "resize");
+	$('.control').toggleClass('hide-map');
+	$('#map-overlay').toggleClass('hide-map');
 });
 
 
