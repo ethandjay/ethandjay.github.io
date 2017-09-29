@@ -207,7 +207,6 @@ $(window).on('load', function () {
 });
 
 var map;
-var marker;
 var locations = [
 	{lat: 35.456481, lng: -112.169454},
 	{lat: 31.7666771, lng: 35.1526975},
@@ -217,20 +216,11 @@ var locations = [
 	{lat: 9.3814053, lng: -84.134413}
 ];
 var zoom = [10, 12, 15, 13, 14, 15];
-var addMarker = function (image_num) {
-	marker = new google.maps.Marker({
-		position: locations[image_num],
-		map: map
-    });
-}
+
 var initMap = function (image_num) {
 	map = new google.maps.Map(document.getElementById('map-shell'), {
 		center: locations[image_num],
 		zoom: zoom[image_num]
-    });
-	marker = new google.maps.Marker({
-		position: locations[image_num],
-		map: map
     });
 }
 
@@ -244,7 +234,6 @@ $(document).on('click', '.where', function () {
 	} else {
 		map.setCenter(locations[currPicID]);
 		map.setZoom(zoom[currPicID]);
-		addMarker(locations[currPicID]);
 	}
 	$('.control').toggleClass('hide-map');
 	$('#map-overlay').toggleClass('hide-map');
