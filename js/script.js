@@ -207,19 +207,23 @@ $(window).on('load', function () {
 });
 
 var map;
-var marker
-var initMap = function (image) {
-	var highway = {lat: 35.456481, lng: -112.169454};
-	var guts = $('#citem0').html();
-	map = new google.maps.Map(document.getElementById('citem0'), {
-		center: highway,
-		zoom: 10
+var marker;
+var initMap = function (image_num) {
+	var locations = [
+		{lat: 35.456481, lng: -112.169454},
+		{lat: 31.7666771, lng: 35.1526975}
+	];
+	var zoom = [10, 12];
+	var guts = $('#citem' + image_num).html();
+	map = new google.maps.Map(document.getElementById('citem' + image_num), {
+		center: locations[image_num],
+		zoom: zoom[image_num]
     });
 	marker = new google.maps.Marker({
-		position: highway,
+		position: locations[image_num],
 		map: map
     });
-    $('#citem0').append(guts).find('div').addClass('gmap-mine');
+    $('#citem' + image_num).append(guts).find('div').addClass('gmap-mine');
 
 }
 
@@ -227,7 +231,11 @@ $(document).on('click', '.where', function () {
 	$('.where').find('h3').text($('.where').find('h3').text() == 'Where was this taken?' ? 'Go back to image' : 'Where was this taken?');
 	$('.control').toggleClass('show-map');
 	if(!$('.carousel-item.active').has('div').length){
-		initMap($('.carousel-item.active'));
+		$('.carousel-item').each(function() {
+			$(this).removeAttr('style');
+			$(this).find('div').remove();
+		});
+		initMap($('.carousel-item.active').attr('id').slice(-1));
 	} else {
 		$('.carousel-item.active').find('div').toggleClass('show-map');
 	}
