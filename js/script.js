@@ -76,21 +76,21 @@ setInterval(function() {
   }
 }, 30);
 
-$(document).on('click', '.play-button', function(event){
-	$.get("https://api.spotify.com/v1/albums/3YDm8Vu6IOjjVdLNHlJtj0");
-});
+// $(document).on('click', '.play-button', function(event){
+// 	$.get("https://api.spotify.com/v1/albums/3YDm8Vu6IOjjVdLNHlJtj0");
+// });
 
 
 // Nav go-to
 $(document).on('click', '.sidebar', function(event) {
-
 	//prevents hash flicker
     event.preventDefault();
 	history.pushState(null, null, $.attr(this, 'href'));
 
-    $('body').animate({
+    $('html,body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top - $(window).height()/2 + $($(this).attr('href')).outerHeight()/2
     }, 500);
+    console.log("et");
 });
 
 $(window).resize(function() {
