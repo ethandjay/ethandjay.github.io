@@ -37,7 +37,7 @@ var scrollEvents = function() {
 		$('.section').animate({opacity:1});
 	}
 	if ($(window).scrollTop() > 50) {
-		$('.carousel-overlay').fadeOut();
+		$('.carousel-overlay').fadeOut(200);
 	} else {
 		$('.carousel-overlay').fadeIn(200);
 	}

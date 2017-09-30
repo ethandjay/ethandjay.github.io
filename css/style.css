@@ -108,7 +108,6 @@ p {
 	margin-top: -5px;
 	border-radius: .25em;
 	opacity: .5;
-	transition: opacity .5s;
 }
 
 .where:hover {
