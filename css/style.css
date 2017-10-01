@@ -104,10 +104,10 @@ p {
 	top: 0;
 	right: 47%;
 	text-align: center;
-	margin: 0 auto;
 	margin-top: -5px;
 	border-radius: .25em;
 	opacity: .5;
+	-webkit-transform: translate(-50%, 0); 
 }
 
 .where:hover {
@@ -501,7 +501,14 @@ p {
 @media only screen and (max-width: 500px) {
 	.section {
 		padding: 5px !important;
-		margin: 20px 5px !important;
+		margin: 20px 0px !important;
+		border-radius: 0;
+	}
+	.container-fluid {
+		padding: 0px;
+	}
+	.section-text {
+		margin-top: 10px;
 	}
 
 }
