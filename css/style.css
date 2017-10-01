@@ -107,7 +107,7 @@ p {
 	margin-top: -5px;
 	border-radius: .25em;
 	opacity: .5;
-	-webkit-transform: translate(-50%, 0); 
+	-webkit-transform: translate(50%, 0); 
 }
 
 .where:hover {
