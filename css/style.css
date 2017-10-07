@@ -498,6 +498,24 @@ p {
     display: table;
 }
 
+.background-image {
+	filter: blur(8px);
+	position: fixed;
+	left: 0;
+	min-width: 100%;
+	z-index: -100;
+}
+
+.four-oh-four {
+	min-width: 400px;
+	max-width: 30%;
+	max-height: 200px;
+	min-height: 0;
+	margin: 18% auto;
+	opacity: .8;
+	text-align: center;
+}
+
 @media only screen and (max-width: 500px) {
 	.section {
 		padding: 5px !important;
