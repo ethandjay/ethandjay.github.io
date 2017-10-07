@@ -501,9 +501,10 @@ p {
 .background-image {
 	filter: blur(8px);
 	position: fixed;
-	left: 0;
-	top: 0;
-	min-width: 100%;
+	left: -10px;
+	top: -10px;
+	min-width: 105%;
+	min-height: 105%;
 	z-index: -100;
 }
 
