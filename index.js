@@ -2705,6 +2705,11 @@
 
 function onDocumentLoad() {
     new Runner('.interstitial-wrapper');
+    var isChrome = !!window.chrome && !!window.chrome.webstore;
+    if (!isChrome) {
+        document.getElementById('main-frame-error').style.display = "none";
+        document.getElementById('game-text').style.display = "none";
+    }
 }
 
 document.addEventListener('DOMContentLoaded', onDocumentLoad);
