@@ -2708,7 +2708,7 @@ function onDocumentLoad() {
     var isChrome = !!window.chrome && !!window.chrome.webstore;
     if (!isChrome) {
         document.getElementById('main-frame-error').style.display = "none";
-        document.getElementById('game-text').style.display = "none";
+        document.getElementById('game-text').innerHTML = " Check back soon.";
     }
 }
 
