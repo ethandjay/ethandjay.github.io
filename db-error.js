@@ -2702,6 +2702,9 @@
     };
 })();
 
+function colorize() {
+    document.getElementsByClassName("title")[0].style.color = "#"+((1<<24)*Math.random()|0).toString(16);
+}
 
 function onDocumentLoad() {
     new Runner('.interstitial-wrapper');
