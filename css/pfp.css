@@ -19,6 +19,7 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 .content {
+	max-height: 90vh;
 	width: 100%;
 	position: absolute;
 	top: 50%;
