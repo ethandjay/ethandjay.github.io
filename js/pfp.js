@@ -5,6 +5,7 @@ function recenter() {
 
 
 $(window).resize( function() { recenter(); } );
+$(window).on('load', function() { recenter(); });
 
 $(document).ready( function() {
 	$('.stream').on('click', function() { 
