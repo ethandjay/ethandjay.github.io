@@ -1,14 +1,19 @@
 function recenter() {
-	var m = ($(window).height() - ($('.container').height() + 180))/2;
+	var m = ($(window).height() - ($('.container').height()))/2;
 	$('.container').css({ "margin-top" : m<0?0:m });
 }
 
 
 $(window).resize( function() { recenter(); } );
 
-$(window).on('load', function() {
+$(document).ready( function() {
 	$('.stream').on('click', function() { 
 		$('.player').toggleClass('min');
 	});
 	recenter()
+});
+
+$(window).on('load', function() {
+	console.log('dope');
+	$('#holder').remove();
 });
