@@ -1,5 +1,5 @@
 function recenter() {
-	var m = ($(window).height() - ($('.container').height()))/2;
+	var m = ($(window).height() - ($('.container').height() + 200))/2;
 	$('.container').css({ "margin-top" : m<0?0:m });
 }
 
@@ -11,7 +11,4 @@ $(document).ready( function() {
 		$('.player').toggleClass('min');
 	});
 	recenter();
-	$(window).on('load', function() {
-		$('#holder').remove();
-	});
 });

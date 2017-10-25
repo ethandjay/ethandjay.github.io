@@ -53,10 +53,6 @@ a, a:link, a:hover, a:visited, a:active {
 	color: #ffcccc;
 }
 
-#holder {
-	height: 180px;
-}
-
 .player {
 	display: block;
 	transition: height .75s;
