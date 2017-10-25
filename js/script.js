@@ -115,6 +115,10 @@ $(document).on('click', '.sidebar-music', function(event) {
     $('.music-container').toggleClass('music-container-min');
 })
 
+$(document).on('click', '.nav-radio', function(event) {
+
+})
+
 $(document).ready( function() {
 	$('#email').attr('href', 'mailto:ethandjay@gmail.com');
 
@@ -157,9 +161,11 @@ $(document).on('click', '.section-link', function(event) {
     $('.section-nav-item').removeClass('active-nav-item');
     $(this).parent().addClass('active-nav-item');
 
-    $('body').animate({
-        scrollTop: $($(this).closest('.section')).offset().top - ($(window).height() - $(this).closest('.section').height())/2
-    }, 500);
+    if ($(window).width() > 500){
+	    $('body').animate({
+	        scrollTop: $($(this).closest('.section')).offset().top - ($(window).height() - $(this).closest('.section').height())/2
+	    }, 500);
+	}
 
     $( $(this).attr('href') ).animate({ opacity: 1 });
     $('.toggleable').not( $(this).attr('href') ).animate({ opacity: 0});
