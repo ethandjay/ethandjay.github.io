@@ -546,6 +546,10 @@ li.nav-item:hover, .nav-item.hovered {
 	.section-text {
 		margin-top: 10px;
 	}
+	.toggleable {
+		min-width: 350px;
+		margin-left: -30px;
+	}
 
 }
 
