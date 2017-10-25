@@ -12,11 +12,14 @@ a, a:link, a:hover, a:visited, a:active {
 	color: inherit;
 }
 
+.container {
+	width: 100%;
+}
+
 .logo-wrapper {
 	margin: 0 auto;
 	width: 100%;
-	max-width: 700px;
-	margin-top: 10vh;
+	max-width: 670px;
 }
 
 .logo {
@@ -35,6 +38,7 @@ a, a:link, a:hover, a:visited, a:active {
 	text-align: center;
 	font-family: OldLondon;
 	font-size: 3.2vmax;
+	font-size: 6vmin;
 	color: rgb(255,255,255);
 	margin: 0 auto;
 	margin-top: 2%;
@@ -61,9 +65,3 @@ a, a:link, a:hover, a:visited, a:active {
 .min {
 	height: 0;
 }
-
-/*@media only screen and (max-width: 740px) {
-	.info {
-		font-size: 30px;
-	}
-}*/
