@@ -102,6 +102,7 @@ $(window).resize(function() {
 	}
 	$('.music-container').css({ "max-height": y });
 	$('.play-overlay').css({ "max-width": $('.music-img').width() });
+	$('.nav-radio').css({ "height": $('.nav-item').first().height() });
 });
 
 

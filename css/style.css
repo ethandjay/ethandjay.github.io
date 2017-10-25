@@ -189,13 +189,29 @@ p {
 	-moz-transition: background-color .25s;
 }
 
-.nav-item:hover, .nav-item.hovered {
+li.nav-item:hover, .nav-item.hovered {
 	background-color: #f6f6f6;
+}
 
+.nav-radio {
+	font-family: 'Yrsa', serif;
+	font-weight: 300;
+	font-size: 20px;
+	background-color: #373737;
+}
+
+.nav-radio:hover {
+	background-color: #202020;
+	cursor: pointer;
 }
 
 .nav-link {
 	color: #373737;
+}
+
+.radio-link, .radio-link:hover {
+	color: #fafafa;
+	padding-left: 5px;
 }
 
 .active-nav-item {
@@ -563,7 +579,7 @@ p {
 	.nameplate {
 		font-size: 28px !important;
 	}
-	.nav-item {
+	.nav-item, .nav-radio {
 		font-size: 16px !important;
 	}
 }
