@@ -10,7 +10,7 @@ $(document).ready( function() {
 	$('.stream').on('click', function() { 
 		$('.player').toggleClass('min');
 	});
-	recenter()
+	recenter();
 });
 
 $(window).on('load', function() {
