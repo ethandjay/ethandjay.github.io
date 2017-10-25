@@ -6,7 +6,7 @@ function recenter() {
 
 $(window).resize( function() { recenter(); } );
 
-$(document).ready( function() {
+$(window).on('load', function() {
 	$('.stream').on('click', function() { 
 		$('.player').toggleClass('min');
 	});
