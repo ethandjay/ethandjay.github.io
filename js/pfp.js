@@ -11,9 +11,7 @@ $(document).ready( function() {
 		$('.player').toggleClass('min');
 	});
 	recenter();
-});
-
-$(window).on('load', function() {
-	console.log('dope');
-	$('#holder').remove();
+	$(window).on('load', function() {
+		$('#holder').remove();
+	});
 });
