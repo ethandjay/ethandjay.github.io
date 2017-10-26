@@ -95,3 +95,10 @@ a, a:link, a:hover, a:visited, a:active {
 .min {
 	height: 0;
 }
+
+@media only screen and (max-width: 500px) {
+	.bg-left, .bg-right {
+		display: none;
+	}
+
+}
