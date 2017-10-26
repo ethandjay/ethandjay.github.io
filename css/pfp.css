@@ -47,7 +47,6 @@ a, a:link, a:hover, a:visited, a:active {
 .logo-wrapper {
 	margin: 0 auto;
 	width: 90%;
-	max-width: 670px;
 	max-width: 80vh;
 }
 
@@ -67,7 +66,7 @@ a, a:link, a:hover, a:visited, a:active {
 	text-align: center;
 	font-family: OldLondon;
 	font-size: 3.2vmax;
-	font-size: 6vmin;
+	font-size: 5vmin;
 	color: rgb(255,255,255);
 	margin: 0 auto;
 	margin-top: 2%;
@@ -94,6 +93,13 @@ a, a:link, a:hover, a:visited, a:active {
 
 .min {
 	height: 0;
+}
+
+@media only screen and (max-width: 850px) {
+	.logo-wrapper {
+		max-width: 80vw;
+	}
+
 }
 
 @media only screen and (max-width: 500px) {
