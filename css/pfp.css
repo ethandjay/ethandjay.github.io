@@ -52,7 +52,7 @@ a, a:link, a:hover, a:visited, a:active {
 	margin: 0 auto;
 	width: 80%;
 	max-width: 670px;
-/*	max-height: 80vh;*/
+	max-width: 80vh;
 	transition: max-height .1s, max-width .1s;
 }
 
