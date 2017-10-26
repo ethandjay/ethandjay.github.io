@@ -21,6 +21,8 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 .bg-left {
+	opacity: 1;
+	transition: opacity .25s;
 	left: 0;
 	position: fixed;
 	min-height: 100%;
@@ -29,6 +31,8 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 .bg-right {
+	opacity: 1;
+	transition: opacity .25s;
 	right: 0;
 	position: fixed;
 	min-height: 100%;
@@ -111,7 +115,7 @@ a, a:link, a:hover, a:visited, a:active {
 
 @media only screen and (max-width: 500px) {
 	.bg-left, .bg-right {
-		display: none;
+		opacity: 0;
 	}
 
 }
