@@ -50,9 +50,9 @@ a, a:link, a:hover, a:visited, a:active {
 
 .logo-wrapper {
 	margin: 0 auto;
-	width: 90%;
+	width: 80%;
 	max-width: 670px;
-	max-height: 80vh;
+/*	max-height: 80vh;*/
 	transition: max-height .1s, max-width .1s;
 }
 
@@ -92,7 +92,7 @@ a, a:link, a:hover, a:visited, a:active {
 	transition: height .75s;
 	margin: 0 auto;
 	margin-top: 10px;
-	height: 180px /* permanent height of mixlr embed */;
+	height: 150px /* permanent height of mixlr embed minus the bottom strip (30px) */;
 	width: 100%;
 	max-width: 600px;
 }
@@ -101,7 +101,7 @@ a, a:link, a:hover, a:visited, a:active {
 	height: 0;
 }
 
-@media only screen and (max-width: 850px) {
+/*@media only screen and (max-width: 850px) {
 	.logo-wrapper {
 		max-width: 80vw;
 	}
@@ -111,7 +111,7 @@ a, a:link, a:hover, a:visited, a:active {
 	.logo-wrapper {
 		max-width: 100vh;
 	}
-}
+}*/
 
 @media only screen and (max-width: 500px) {
 	.bg-left, .bg-right {
