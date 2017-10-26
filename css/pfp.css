@@ -47,7 +47,9 @@ a, a:link, a:hover, a:visited, a:active {
 .logo-wrapper {
 	margin: 0 auto;
 	width: 90%;
-	max-width: 80vh;
+	max-width: 670px;
+	max-height: 80vh;
+	transition: max-height .1s, max-width .1s;
 }
 
 .logo {
@@ -99,7 +101,12 @@ a, a:link, a:hover, a:visited, a:active {
 	.logo-wrapper {
 		max-width: 80vw;
 	}
+}
 
+@media only screen and (max-height: 500px) {
+	.logo-wrapper {
+		max-width: 100vh;
+	}
 }
 
 @media only screen and (max-width: 500px) {
