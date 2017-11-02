@@ -402,6 +402,7 @@ li.nav-item:hover, .nav-item.hovered {
 	order: 2;
 	max-height: 100%;
 	align-items: center;
+	max-width: 100%;
 }
 
 .inactive-content {
