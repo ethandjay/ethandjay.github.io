@@ -82,6 +82,23 @@ a, a:link, a:hover, a:visited, a:active {
 	margin-top: 2%;
 }
 
+@keyframes nowplaying {
+	from {color: #FFFFFF;}
+	to {color: #ffb3b3;}
+}
+
+.np {
+	margin-top: .5%;
+	animation-name: nowplaying;
+	animation-duration: 1s;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+}
+
+.hidden {
+	display: none;
+}
+
 .info-link {
 	border-bottom: #FFFFFF 2px dashed;
 	transition: color .5s;
@@ -89,7 +106,7 @@ a, a:link, a:hover, a:visited, a:active {
 
 .info-link:hover {
 	cursor: pointer;
-	color: #ffcccc;
+	color: #ffb3b3;
 }
 
 .player {
