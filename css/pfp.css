@@ -88,7 +88,12 @@ a, a:link, a:hover, a:visited, a:active {
 }
 
 .np {
+	font-size: auto;
+	font-size: 6vmin;
 	margin-top: .5%;
+	position: absolute;
+	top: 0;
+	width: 100%;
 	animation-name: nowplaying;
 	animation-duration: 1s;
 	animation-direction: alternate-reverse;
