@@ -107,6 +107,8 @@ a, a:link, a:hover, a:visited, a:active {
 .info-link {
 	border-bottom: #FFFFFF 2px dashed;
 	transition: color .5s;
+	display: inline-block;
+	padding-bottom: .5%;
 }
 
 .info-link:hover {
