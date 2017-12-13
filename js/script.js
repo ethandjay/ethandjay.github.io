@@ -29,7 +29,7 @@ var scrollEvents = function() {
 					var elemOffsetFromTop = $(this).offset().top - scrollHeight;
 					 //if(index == 0) $('.nav-link').text(1 - Math.abs((windowHeight/2 - elemOffset - $(this).height()/2) / (windowHeight/2 + 150)));
 
-					return 1.1 - 1.1*Math.abs((windowHeight/2 - elemOffsetFromTop - elemHeight/2) / (windowHeight/2 + 300));
+					return 1.1 - 1.1*Math.abs((windowHeight/2 - elemOffsetFromTop - elemHeight/2) / (windowHeight/2 + 800));
 				}
 			});
 		});
