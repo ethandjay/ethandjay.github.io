@@ -482,6 +482,10 @@ li.nav-item:hover, .nav-item.hovered {
 	justify-content: center;
 }
 
+.skill-col {
+	margin: 0 4px;
+}
+
 .wulogo {
 	position: relative;
 	display: block;
