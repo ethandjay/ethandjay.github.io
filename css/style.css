@@ -84,6 +84,10 @@ span.project-sub {
 	overflow: auto;
 }
 
+.section-col-xl {
+	flex-grow: 2.5;
+}
+
 .row-wrap {
 	flex-flow: row wrap;
 }
