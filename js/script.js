@@ -56,7 +56,7 @@ $(document).ready( function () {
 	scrollEvents();
 
 	// Resize bottom of page padding
-	$('.butt').height( $(window).height()/2 - $('.section').last().outerHeight(true)/2 );
+	$('.butt').height( $(window).height()/2 - $('.section').first().outerHeight(true)/2 );
 });
 //$(window).scroll(scrollEvents);
 
@@ -96,13 +96,13 @@ $(document).on('click', '.sidebar', function(event) {
 $(window).resize(function() {
 	scrollEvents();
 
-	var y = $(window).height() - ($('.nav-item-music').offset().top - $(window).scrollTop() + $('.nav-item-music').outerHeight());
-	if (y < 0){
-		y = 0;
-	}
-	$('.music-container').css({ "max-height": y });
-	$('.play-overlay').css({ "max-width": $('.music-img').width() });
-	$('.nav-radio').css({ "height": $('.nav-item').first().height() });
+	// var y = $(window).height() - ($('.nav-item-music').offset().top - $(window).scrollTop() + $('.nav-item-music').outerHeight());
+	// if (y < 0){
+	// 	y = 0;
+	// }
+	// $('.music-container').css({ "max-height": y });
+	// $('.play-overlay').css({ "max-width": $('.music-img').width() });
+	// $('.nav-radio').css({ "height": $('.nav-item').first().height() });
 });
 
 
