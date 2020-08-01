@@ -89,8 +89,11 @@ $(document).on('click', '.sidebar', function(event) {
 
     $('html,body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top - $(window).height()/2 + $($(this).attr('href')).outerHeight()/2
-    }, 500);
-    console.log("et");
+	}, 500);
+	// window.scrollTo({ 
+	// 	top: $( $(this).attr('href') ).offset().top - $(window).height()/2 + $($(this).attr('href')).outerHeight()/2,
+	// 	behavior: 'smooth'
+	// });
 });
 
 $(window).resize(function() {
@@ -162,14 +165,14 @@ $(document).on('click', '.section-link', function(event) {
     $(this).parent().addClass('active-nav-item');
 
     if ($(window).width() > 500){
-	    // $('body').animate({
-	    //     scrollTop: $($(this).closest('.section')).offset().top - ($(window).height() - $(this).closest('.section').height())/2
-		// }, 500);
-		var nearSection = $(this).closest('.section');
-		window.scrollTo({ 
-			top: $(nearSection).offset().top - ($(window).height() - nearSection.height())/2,
-			behavior: 'smooth'
-		});
+	    $('body').animate({
+	        scrollTop: $($(this).closest('.section')).offset().top - ($(window).height() - $(this).closest('.section').height())/2
+		}, 500);
+		// var nearSection = $(this).closest('.section');
+		// window.scrollTo({ 
+		// 	top: $(nearSection).offset().top - ($(window).height() - nearSection.height())/2,
+		// 	behavior: 'smooth'
+		// });
 	}
 
     $( $(this).attr('href') ).animate({ opacity: 1 });
