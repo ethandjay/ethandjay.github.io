@@ -162,9 +162,14 @@ $(document).on('click', '.section-link', function(event) {
     $(this).parent().addClass('active-nav-item');
 
     if ($(window).width() > 500){
-	    $('body').animate({
-	        scrollTop: $($(this).closest('.section')).offset().top - ($(window).height() - $(this).closest('.section').height())/2
-	    }, 500);
+	    // $('body').animate({
+	    //     scrollTop: $($(this).closest('.section')).offset().top - ($(window).height() - $(this).closest('.section').height())/2
+		// }, 500);
+		var nearSection = $(this).closest('.section');
+		window.scrollTo({ 
+			top: $(nearSection).offset().top - ($(window).height() - nearSection.height())/2,
+			behavior: 'smooth'
+		});
 	}
 
     $( $(this).attr('href') ).animate({ opacity: 1 });
