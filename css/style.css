@@ -88,6 +88,10 @@ span.project-sub {
 	flex-grow: 2.5;
 }
 
+.section-col-mini {
+	flex-grow: .5;
+}
+
 .row-wrap {
 	flex-flow: row wrap;
 }
@@ -105,6 +109,11 @@ span.project-sub {
 	overflow: hidden;
 	max-height: 100vh;
 	max-width: auto;
+}
+
+.carousel-overlay {
+	opacity: 1;
+	transition: opacity .5s;
 }
 
 .where {
@@ -150,6 +159,7 @@ span.project-sub {
 	min-width: 100%;
 	max-width: 100%;
 	position: absolute;
+	pointer-events: auto;
 	transition: opacity 1s;
 }
 
@@ -190,6 +200,7 @@ span.project-sub {
 	font-size: 48px;
 	margin: 40px;
 	margin-bottom: 20px;
+	display: flex;
 }
 
 .nav-item {
@@ -356,11 +367,17 @@ li.nav-item:hover, .nav-item.hovered {
 	height: 100vh;
 }
 
+.main-content {
+	flex-grow: 3;
+	display: "inline-block";
+	pointer-events: none;
+}
+
 .section {
 	display: flex;
 	transition: height 1s;
-  	align-items: center; 
-  	justify-content: center;
+	justify-content: center;
+	align-items: center;
 	background-color: #fafafa;
 	margin: 30px 35px;
 	padding: 30px;
@@ -384,7 +401,6 @@ li.nav-item:hover, .nav-item.hovered {
 }
 
 .right-flyer, .left-flyer {
-	display: inline-block;
 	transition: transform 1s cubic-bezier(.72,.01,.8,.18);
 }
 
@@ -398,21 +414,25 @@ li.nav-item:hover, .nav-item.hovered {
 }
 
 .toggleable {
-
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .5s cubic-bezier(0.33, 1, 0.68, 1) ;
+	display: none;
 }
 
 .togglebox {
 	flex: 2 2 600px;
+	margin: 10px;
 	order: 2;
 	max-height: 100%;
-	align-items: center;
 	max-width: 100%;
 }
 
-.inactive-content {
-	opacity: 0;
-	display: none;
-	pointer-events: none;
+.active-content {
+	opacity: 1;
+	display: block;
+	transition: opacity .25s cubic-bezier(0.32, 0, 0.67, 0);
+	pointer-events: auto;
 }
 
 .review-thumb {
@@ -425,7 +445,7 @@ li.nav-item:hover, .nav-item.hovered {
 .review-pic {
 	border-radius: 10%;
 	opacity: .5;
-	transition: opacity .5s;
+	transition: opacity .25s;
 	max-width: 100%;
 	height: auto;
 }
@@ -550,7 +570,7 @@ li.nav-item:hover, .nav-item.hovered {
 	text-align: center;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 580px) {
 	.section {
 		padding: 5px !important;
 		margin: 20px 0px !important;
@@ -576,9 +596,12 @@ li.nav-item:hover, .nav-item.hovered {
 
 }
 
-@media only screen and (max-width: 726px) {
+@media only screen and (max-width: 845px) {
 	.lefty {
 		display: none !important;
+	}
+	.main-content {
+		flex-basis: 100%;
 	}
 
 }
@@ -623,4 +646,9 @@ li.nav-item:hover, .nav-item.hovered {
 		font-size: 36px !important;
 	}
 
+}
+
+.fade-out {
+	opacity: 0;
+	transition: opacity .5s;
 }
