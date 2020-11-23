@@ -166,6 +166,7 @@ span.project-sub {
 .map-shell {
 	height: 100vh;
 	pointer-events: auto;
+	transition: opacity .5s;
 }
 
 .hide-map {
