@@ -129,75 +129,47 @@ $(document).ready( function () {
 
 // });
 
-var blurLoad = function(num, name) {
-	var img = new Image();
-	img.onload = function() {
-		$('#cimg-' + num).attr("src", img.src);
-		$('#cimg-' + num).removeClass("loading");
-	}
-	img.src = images[name]
-}
+// var blurLoad = function(num, name) {
+// 	var img = new Image();
+// 	img.onload = function() {
+// 		$('#cimg-' + num).attr("src", img.src);
+// 		$('#cimg-' + num).removeClass("loading");
+// 	}
+// 	img.src = images[name]
+// }
 
 $(window).on('load', function () {
-	setTimeout(function(){
-		$('.left-flyer').addClass('left-anim');
-		$('.right-flyer').addClass('right-anim');
-	}, 2000);
+	// setTimeout(function(){
+	// 	$('.left-flyer').addClass('left-anim');
+	// 	$('.right-flyer').addClass('right-anim');
+	// }, 2000);
 
-	setTimeout( function() {
-		$('.left-flyer, .right-flyer').css({'transition':'transform .5s'});
-	}, 3000);
-	$(window).trigger('resize');
+	// setTimeout( function() {
+	// 	$('.left-flyer, .right-flyer').css({'transition':'transform .5s'});
+	// }, 3000);
+	// $(window).trigger('resize');
 
 
 	// Dynamically blur-load (carousel) images
 
 	// All large pictures to be loaded (in descending priority)
-	var bigPics = [
-		"highway",
-		"chairs",
-		"roof",
-		"wires",
-		"blur",
-		"rocks",
-	];
+	// var bigPics = [
+	// 	"highway",
+	// 	"chairs",
+	// 	"roof",
+	// 	"wires",
+	// 	"blur",
+	// 	"rocks",
+	// ];
 
-	for (var i = 0; i < bigPics.length; i++){
-		blurLoad(i, bigPics[i])
-	}
+	// for (var i = 0; i < bigPics.length; i++){
+	// 	blurLoad(i, bigPics[i])
+	// }
 });
 
-var map;
-var locations = [
-	{lat: 35.456481, lng: -112.169454},
-	{lat: 31.7666771, lng: 35.1526975},
-	{lat: 9.4047389, lng: -84.1606367},
-	{lat: 29.965577, lng: 35.02962},
-	{lat: 36.0529925, lng: -112.1409521},
-	{lat: 9.3814053, lng: -84.134413}
-];
-var zoom = [10, 12, 15, 13, 14, 15];
-
-var initMap = function (image_num) {
-	map = new google.maps.Map(document.getElementById('map-shell'), {
-		center: locations[image_num],
-		zoom: zoom[image_num]
-    });
-}
 
 $(document).on('click', '.where', function () {
-	$('.where').find('h3').text($('.where').find('h3').text() == 'Where was this taken?' ? 'Go back to image' : 'Where was this taken?');
 
-	var currPicID = $('.carousel-item.active').attr('id').slice(-1);
-	console.log(currPicID);
-	if ($('#map-shell').children().length == 0){
-		initMap(currPicID);
-	} else {
-		map.setCenter(locations[currPicID]);
-		map.setZoom(zoom[currPicID]);
-	}
-	$('.control').toggleClass('hide-map');
-	$('#map-overlay').toggleClass('hide-map');
 });
 
 

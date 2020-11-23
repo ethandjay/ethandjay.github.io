@@ -41,6 +41,9 @@ export default function Block(props) {
     }, 500))
     useEffect(() => throttledScrollEffects.current(opacity), [opacity])
 
+    // Kick off scroll events
+    throttledScrollEffects.current()
+
     // Calculate section distance from window vertical midpoint
     const calculateDistFromCenter = () => {
         var nodeOffsetTop = sectionNode.current.offsetTop
