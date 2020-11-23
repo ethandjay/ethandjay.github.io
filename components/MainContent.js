@@ -9,7 +9,7 @@ export default function MainContent(props) {
     return(
         <div className="main-content">
             <Background />
-            <div style={{ position: "relative" }}>
+            <div style={{ position: "relative", maxWidth: "100vw" }}>
                 <div className="bumper"></div>
                 <AboutBlock />
                 <ExperienceBlock />

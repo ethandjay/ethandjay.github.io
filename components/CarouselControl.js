@@ -11,7 +11,6 @@ export default function CarouselControl(props) {
     return(
         <a
             className={`carousel-overlay carousel-control-${props.type.toLowerCase()} control ${props.show ? "" : "fade-out"}`} 
-            href="#carouselControls" 
             role="button" 
             // data-slide={props.type.toLowerCase()} 
             onClick={ handleChange }

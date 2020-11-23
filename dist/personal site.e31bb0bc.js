@@ -52581,6 +52581,11 @@ function ExperienceBlock(props) {
       activeSection = _useState2[0],
       setActiveSection = _useState2[1];
 
+  var handleNavClick = function handleNavClick(e, index) {
+    e.preventDefault();
+    setActiveSection(index);
+  };
+
   return /*#__PURE__*/_react.default.createElement(_Block.default, {
     name: "experience"
   }, /*#__PURE__*/_react.default.createElement("nav", {
@@ -52592,8 +52597,8 @@ function ExperienceBlock(props) {
     }, /*#__PURE__*/_react.default.createElement("a", {
       className: "nav-link section-link",
       href: '#' + section.shorthand,
-      onClick: function onClick() {
-        return setActiveSection(index);
+      onClick: function onClick(e) {
+        return handleNavClick(e, index);
       }
     }, section.name));
   })), /*#__PURE__*/_react.default.createElement("div", {
@@ -52633,18 +52638,18 @@ function Badge(props) {
 module.exports = "/email.47b646cf.png";
 },{}],"img/contact/github.png":[function(require,module,exports) {
 module.exports = "/github.0f72f2c3.png";
-},{}],"img/contact/linkedin.png":[function(require,module,exports) {
-module.exports = "/linkedin.cdb6c947.png";
 },{}],"img/contact/twitter.png":[function(require,module,exports) {
 module.exports = "/twitter.dd16903b.png";
+},{}],"img/contact/linkedin.png":[function(require,module,exports) {
+module.exports = "/linkedin.cdb6c947.png";
 },{}],"img/contact/*.png":[function(require,module,exports) {
 module.exports = {
   "email": require("./email.png"),
   "github": require("./github.png"),
-  "linkedin": require("./linkedin.png"),
-  "twitter": require("./twitter.png")
+  "twitter": require("./twitter.png"),
+  "linkedin": require("./linkedin.png")
 };
-},{"./email.png":"img/contact/email.png","./github.png":"img/contact/github.png","./linkedin.png":"img/contact/linkedin.png","./twitter.png":"img/contact/twitter.png"}],"components/ContactCell.js":[function(require,module,exports) {
+},{"./email.png":"img/contact/email.png","./github.png":"img/contact/github.png","./twitter.png":"img/contact/twitter.png","./linkedin.png":"img/contact/linkedin.png"}],"components/ContactCell.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -52868,54 +52873,54 @@ function CarouselIndicator(props) {
 module.exports = "/blur-sm.eb028c15.jpg";
 },{}],"img/chairs-sm.jpg":[function(require,module,exports) {
 module.exports = "/chairs-sm.d99833b3.jpg";
-},{}],"img/blur.jpg":[function(require,module,exports) {
-module.exports = "/blur.063013e3.jpg";
 },{}],"img/chairs.jpg":[function(require,module,exports) {
 module.exports = "/chairs.03b40f3f.jpg";
-},{}],"img/headshot.jpg":[function(require,module,exports) {
-module.exports = "/headshot.dd511d87.jpg";
+},{}],"img/blur.jpg":[function(require,module,exports) {
+module.exports = "/blur.063013e3.jpg";
 },{}],"img/ethan.jpg":[function(require,module,exports) {
 module.exports = "/ethan.6c0df2b1.jpg";
+},{}],"img/headshot.jpg":[function(require,module,exports) {
+module.exports = "/headshot.dd511d87.jpg";
 },{}],"img/highway-sm.jpg":[function(require,module,exports) {
 module.exports = "/highway-sm.378317d3.jpg";
 },{}],"img/highway.jpg":[function(require,module,exports) {
 module.exports = "/highway.5b2c6d5b.jpg";
-},{}],"img/rocks-sm.jpg":[function(require,module,exports) {
-module.exports = "/rocks-sm.a03a367a.jpg";
 },{}],"img/rocks.jpg":[function(require,module,exports) {
 module.exports = "/rocks.6963d90a.jpg";
-},{}],"img/roof.jpg":[function(require,module,exports) {
-module.exports = "/roof.fecc3164.jpg";
+},{}],"img/rocks-sm.jpg":[function(require,module,exports) {
+module.exports = "/rocks-sm.a03a367a.jpg";
 },{}],"img/roof-sm.jpg":[function(require,module,exports) {
 module.exports = "/roof-sm.08086b97.jpg";
-},{}],"img/wires-sm.jpg":[function(require,module,exports) {
-module.exports = "/wires-sm.3e40ca3d.jpg";
+},{}],"img/roof.jpg":[function(require,module,exports) {
+module.exports = "/roof.fecc3164.jpg";
 },{}],"img/wires.jpg":[function(require,module,exports) {
 module.exports = "/wires.da6f0056.jpg";
+},{}],"img/wires-sm.jpg":[function(require,module,exports) {
+module.exports = "/wires-sm.3e40ca3d.jpg";
 },{}],"img/*.jpg":[function(require,module,exports) {
 module.exports = {
   "blur-sm": require("./blur-sm.jpg"),
   "chairs-sm": require("./chairs-sm.jpg"),
-  "blur": require("./blur.jpg"),
   "chairs": require("./chairs.jpg"),
-  "conform": require("./conform.jpg"),
+  "blur": require("./blur.jpg"),
   "elder": require("./elder.jpg"),
+  "conform": require("./conform.jpg"),
+  "ethan": require("./ethan.jpg"),
   "ethan2": require("./ethan2.jpg"),
   "headshot": require("./headshot.jpg"),
-  "ethan": require("./ethan.jpg"),
   "highway-sm": require("./highway-sm.jpg"),
   "highway": require("./highway.jpg"),
   "pile": require("./pile.jpg"),
-  "rocks-sm": require("./rocks-sm.jpg"),
   "rocks": require("./rocks.jpg"),
-  "roof": require("./roof.jpg"),
+  "rocks-sm": require("./rocks-sm.jpg"),
   "roof-sm": require("./roof-sm.jpg"),
+  "roof": require("./roof.jpg"),
   "softfangs": require("./softfangs.jpg"),
   "sweet": require("./sweet.jpg"),
-  "wires-sm": require("./wires-sm.jpg"),
-  "wires": require("./wires.jpg")
+  "wires": require("./wires.jpg"),
+  "wires-sm": require("./wires-sm.jpg")
 };
-},{"./blur-sm.jpg":"img/blur-sm.jpg","./chairs-sm.jpg":"img/chairs-sm.jpg","./blur.jpg":"img/blur.jpg","./chairs.jpg":"img/chairs.jpg","./conform.jpg":"img/conform.jpg","./elder.jpg":"img/elder.jpg","./ethan2.jpg":"img/ethan2.jpg","./headshot.jpg":"img/headshot.jpg","./ethan.jpg":"img/ethan.jpg","./highway-sm.jpg":"img/highway-sm.jpg","./highway.jpg":"img/highway.jpg","./pile.jpg":"img/pile.jpg","./rocks-sm.jpg":"img/rocks-sm.jpg","./rocks.jpg":"img/rocks.jpg","./roof.jpg":"img/roof.jpg","./roof-sm.jpg":"img/roof-sm.jpg","./softfangs.jpg":"img/softfangs.jpg","./sweet.jpg":"img/sweet.jpg","./wires-sm.jpg":"img/wires-sm.jpg","./wires.jpg":"img/wires.jpg"}],"components/CarouselImage.js":[function(require,module,exports) {
+},{"./blur-sm.jpg":"img/blur-sm.jpg","./chairs-sm.jpg":"img/chairs-sm.jpg","./chairs.jpg":"img/chairs.jpg","./blur.jpg":"img/blur.jpg","./elder.jpg":"img/elder.jpg","./conform.jpg":"img/conform.jpg","./ethan.jpg":"img/ethan.jpg","./ethan2.jpg":"img/ethan2.jpg","./headshot.jpg":"img/headshot.jpg","./highway-sm.jpg":"img/highway-sm.jpg","./highway.jpg":"img/highway.jpg","./pile.jpg":"img/pile.jpg","./rocks.jpg":"img/rocks.jpg","./rocks-sm.jpg":"img/rocks-sm.jpg","./roof-sm.jpg":"img/roof-sm.jpg","./roof.jpg":"img/roof.jpg","./softfangs.jpg":"img/softfangs.jpg","./sweet.jpg":"img/sweet.jpg","./wires.jpg":"img/wires.jpg","./wires-sm.jpg":"img/wires-sm.jpg"}],"components/CarouselImage.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -52998,7 +53003,6 @@ function CarouselControl(props) {
 
   return /*#__PURE__*/_react.default.createElement("a", {
     className: "carousel-overlay carousel-control-".concat(props.type.toLowerCase(), " control ").concat(props.show ? "" : "fade-out"),
-    href: "#carouselControls",
     role: "button" // data-slide={props.type.toLowerCase()} 
     ,
     onClick: handleChange
@@ -53220,7 +53224,8 @@ function MainContent(props) {
     className: "main-content"
   }, /*#__PURE__*/_react.default.createElement(_Background.default, null), /*#__PURE__*/_react.default.createElement("div", {
     style: {
-      position: "relative"
+      position: "relative",
+      maxWidth: "100vw"
     }
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "bumper"
@@ -56496,7 +56501,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50214" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59914" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

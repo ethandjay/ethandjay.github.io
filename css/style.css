@@ -577,6 +577,69 @@ li.nav-item:hover, .nav-item.hovered {
 	text-align: center;
 }
 
+
+@media only screen and (max-width: 1497px) {
+	.nameplate {
+		font-size: 36px;
+	}
+
+}
+
+@media only screen and (max-width: 1256px) {
+	.section-nav {
+		flex-direction: row !important;
+			text-align: center;
+	}
+}
+
+@media only screen and (max-width: 1195px) {
+	.right-flyer, .left-flyer {
+		display: none !important;
+	}
+
+}
+
+@media only screen and (max-width: 1135px) {
+	.nameplate {
+		font-size: 28px;
+	}
+	.nav-item, .nav-radio {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 1112px) {
+	.custom-sites {
+		min-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 870px) {
+	.skill-text {
+		max-width: 20%;
+	}
+	.nav-item, .nav-radio {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 845px) {
+	.lefty {
+		display: none !important;
+	}
+	.main-content {
+		flex-basis: 100%;
+	}
+
+}
+
+@media only screen and (max-width: 590px) {
+	.skill-text {
+		min-width: 100%;
+	}
+
+}
+
 @media only screen and (max-width: 580px) {
 	.section {
 		padding: 5px !important;
@@ -592,65 +655,6 @@ li.nav-item:hover, .nav-item.hovered {
 	.toggleable {
 		min-width: 350px;
 /*		margin-left: -30px;*/
-	}
-
-}
-
-@media only screen and (max-width: 590px) {
-	.skill-text {
-		min-width: 100%;
-	}
-
-}
-
-@media only screen and (max-width: 845px) {
-	.lefty {
-		display: none !important;
-	}
-	.main-content {
-		flex-basis: 100%;
-	}
-
-}
-
-@media only screen and (max-width: 870px) {
-	.skill-text {
-		max-width: 20%;
-	}
-}
-
-@media only screen and (max-width: 1112px) {
-	.custom-sites {
-		min-width: 100%;
-	}
-}
-
-@media only screen and (max-width: 1135px) {
-	.nameplate {
-		font-size: 28px !important;
-	}
-	.nav-item, .nav-radio {
-		font-size: 16px !important;
-	}
-}
-
-@media only screen and (max-width: 1195px) {
-	.right-flyer, .left-flyer {
-		display: none !important;
-	}
-
-}
-
-@media only screen and (max-width: 1256px) {
-	.section-nav {
-		flex-direction: row !important;
-			text-align: center;
-	}
-}
-
-@media only screen and (max-width: 1497px) {
-	.nameplate {
-		font-size: 36px !important;
 	}
 
 }
