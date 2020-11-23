@@ -2,23 +2,24 @@ import React, { useState, useEffect } from 'react'
 import images from '../img/*.jpg'
 
 export default function CarouselImage(props) { 
-    const [imageSource, setImageSource] = useState(`img/${props.name}-sm.jpg`)
+    const [imageSource, setImageSource] = useState(`${images[props.name + "-sm"]}`)
     const [isLoading, setIsLoading] = useState(true)
 
     // Lazy-load full res images
     useEffect(() => {
         var img = new Image();
         img.onload = function() {
-            setImageSource(`img/${props.name}.jpg`)
+            setImageSource(`${images[props.name]}`)
             setIsLoading(false)
         }
-        img.src = require(`img/${props.name}.jpg`)
+        img.src = `${images[props.name]}`
+        console.log(images)
     },[])
 
     return (
         <div className={`carousel-item ${props.selected == props.id ? "active" : ""}`} id={`citem${props.num}`}>
             <img 
-                src={require(imageSource)}
+                src={imageSource}
                 className={`carousel-img d-block img-fluid overfit ${isLoading ? "loading" : ""}`}
                 alt="sixth" 
                 id={`cimg-${props.num}`}

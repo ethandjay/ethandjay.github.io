@@ -52866,28 +52866,28 @@ function CarouselIndicator(props) {
 }
 },{"react":"node_modules/react/index.js"}],"img/blur-sm.jpg":[function(require,module,exports) {
 module.exports = "/blur-sm.eb028c15.jpg";
-},{}],"img/blur.jpg":[function(require,module,exports) {
-module.exports = "/blur.063013e3.jpg";
 },{}],"img/chairs-sm.jpg":[function(require,module,exports) {
 module.exports = "/chairs-sm.d99833b3.jpg";
+},{}],"img/blur.jpg":[function(require,module,exports) {
+module.exports = "/blur.063013e3.jpg";
 },{}],"img/chairs.jpg":[function(require,module,exports) {
 module.exports = "/chairs.03b40f3f.jpg";
-},{}],"img/ethan.jpg":[function(require,module,exports) {
-module.exports = "/ethan.6c0df2b1.jpg";
 },{}],"img/headshot.jpg":[function(require,module,exports) {
 module.exports = "/headshot.dd511d87.jpg";
+},{}],"img/ethan.jpg":[function(require,module,exports) {
+module.exports = "/ethan.6c0df2b1.jpg";
 },{}],"img/highway-sm.jpg":[function(require,module,exports) {
 module.exports = "/highway-sm.378317d3.jpg";
 },{}],"img/highway.jpg":[function(require,module,exports) {
 module.exports = "/highway.5b2c6d5b.jpg";
 },{}],"img/rocks-sm.jpg":[function(require,module,exports) {
 module.exports = "/rocks-sm.a03a367a.jpg";
+},{}],"img/rocks.jpg":[function(require,module,exports) {
+module.exports = "/rocks.6963d90a.jpg";
 },{}],"img/roof.jpg":[function(require,module,exports) {
 module.exports = "/roof.fecc3164.jpg";
 },{}],"img/roof-sm.jpg":[function(require,module,exports) {
 module.exports = "/roof-sm.08086b97.jpg";
-},{}],"img/rocks.jpg":[function(require,module,exports) {
-module.exports = "/rocks.6963d90a.jpg";
 },{}],"img/wires-sm.jpg":[function(require,module,exports) {
 module.exports = "/wires-sm.3e40ca3d.jpg";
 },{}],"img/wires.jpg":[function(require,module,exports) {
@@ -52895,27 +52895,27 @@ module.exports = "/wires.da6f0056.jpg";
 },{}],"img/*.jpg":[function(require,module,exports) {
 module.exports = {
   "blur-sm": require("./blur-sm.jpg"),
-  "blur": require("./blur.jpg"),
   "chairs-sm": require("./chairs-sm.jpg"),
+  "blur": require("./blur.jpg"),
   "chairs": require("./chairs.jpg"),
   "conform": require("./conform.jpg"),
   "elder": require("./elder.jpg"),
-  "ethan": require("./ethan.jpg"),
   "ethan2": require("./ethan2.jpg"),
   "headshot": require("./headshot.jpg"),
+  "ethan": require("./ethan.jpg"),
   "highway-sm": require("./highway-sm.jpg"),
   "highway": require("./highway.jpg"),
   "pile": require("./pile.jpg"),
   "rocks-sm": require("./rocks-sm.jpg"),
+  "rocks": require("./rocks.jpg"),
   "roof": require("./roof.jpg"),
   "roof-sm": require("./roof-sm.jpg"),
-  "rocks": require("./rocks.jpg"),
   "softfangs": require("./softfangs.jpg"),
   "sweet": require("./sweet.jpg"),
   "wires-sm": require("./wires-sm.jpg"),
   "wires": require("./wires.jpg")
 };
-},{"./blur-sm.jpg":"img/blur-sm.jpg","./blur.jpg":"img/blur.jpg","./chairs-sm.jpg":"img/chairs-sm.jpg","./chairs.jpg":"img/chairs.jpg","./conform.jpg":"img/conform.jpg","./elder.jpg":"img/elder.jpg","./ethan.jpg":"img/ethan.jpg","./ethan2.jpg":"img/ethan2.jpg","./headshot.jpg":"img/headshot.jpg","./highway-sm.jpg":"img/highway-sm.jpg","./highway.jpg":"img/highway.jpg","./pile.jpg":"img/pile.jpg","./rocks-sm.jpg":"img/rocks-sm.jpg","./roof.jpg":"img/roof.jpg","./roof-sm.jpg":"img/roof-sm.jpg","./rocks.jpg":"img/rocks.jpg","./softfangs.jpg":"img/softfangs.jpg","./sweet.jpg":"img/sweet.jpg","./wires-sm.jpg":"img/wires-sm.jpg","./wires.jpg":"img/wires.jpg"}],"components/CarouselImage.js":[function(require,module,exports) {
+},{"./blur-sm.jpg":"img/blur-sm.jpg","./chairs-sm.jpg":"img/chairs-sm.jpg","./blur.jpg":"img/blur.jpg","./chairs.jpg":"img/chairs.jpg","./conform.jpg":"img/conform.jpg","./elder.jpg":"img/elder.jpg","./ethan2.jpg":"img/ethan2.jpg","./headshot.jpg":"img/headshot.jpg","./ethan.jpg":"img/ethan.jpg","./highway-sm.jpg":"img/highway-sm.jpg","./highway.jpg":"img/highway.jpg","./pile.jpg":"img/pile.jpg","./rocks-sm.jpg":"img/rocks-sm.jpg","./rocks.jpg":"img/rocks.jpg","./roof.jpg":"img/roof.jpg","./roof-sm.jpg":"img/roof-sm.jpg","./softfangs.jpg":"img/softfangs.jpg","./sweet.jpg":"img/sweet.jpg","./wires-sm.jpg":"img/wires-sm.jpg","./wires.jpg":"img/wires.jpg"}],"components/CarouselImage.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -52946,7 +52946,7 @@ function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 function CarouselImage(props) {
-  var _useState = (0, _react.useState)("img/".concat(props.name, "-sm.jpg")),
+  var _useState = (0, _react.useState)("".concat(_.default[props.name + "-sm"])),
       _useState2 = _slicedToArray(_useState, 2),
       imageSource = _useState2[0],
       setImageSource = _useState2[1];
@@ -52961,17 +52961,18 @@ function CarouselImage(props) {
     var img = new Image();
 
     img.onload = function () {
-      setImageSource("img/".concat(props.name, ".jpg"));
+      setImageSource("".concat(_.default[props.name]));
       setIsLoading(false);
     };
 
-    img.src = require("img/".concat(props.name, ".jpg"));
+    img.src = "".concat(_.default[props.name]);
+    console.log(_.default);
   }, []);
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "carousel-item ".concat(props.selected == props.id ? "active" : ""),
     id: "citem".concat(props.num)
   }, /*#__PURE__*/_react.default.createElement("img", {
-    src: require(imageSource),
+    src: imageSource,
     className: "carousel-img d-block img-fluid overfit ".concat(isLoading ? "loading" : ""),
     alt: "sixth",
     id: "cimg-".concat(props.num) // style={{ transform: `translateY(-${props.parallaxFactor}vh)`}}
@@ -56495,7 +56496,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63933" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50214" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
