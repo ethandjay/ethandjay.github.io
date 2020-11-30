@@ -11,7 +11,7 @@ export default function NavItem(props) {
     }
 
     return(
-        <li className={`nav-item nav-item-onpage ${props.hovered ? "hovered" : ""}`} onClick={(e) => autoScroll(e)}>
+        <li className={`nav-item nav-item-onpage`} onClick={(e) => autoScroll(e)}>
             <a className="nav-link sidebar" href={`#${lowerName}`}>{props.name}</a>
         </li>
     )

@@ -180,7 +180,7 @@ span.project-sub {
 
 .overfit {
 	object-fit: cover;
-	min-height: 110vh;
+	min-height: 100vh;
 }
 
 .none {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import images from '../img/*.jpg'
+import images from '../img/carousel/*.jpg'
 
 export default function CarouselImage(props) { 
     const [imageSource, setImageSource] = useState(`${images[props.name + "-sm"]}`)

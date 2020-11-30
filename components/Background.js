@@ -13,7 +13,8 @@ export default function Background(props) {
 		"roof",
 		"wires",
 		"blur",
-		"rocks",
+        "rocks",
+        "horse"
     ];
     const [selectedImg, setSelectedImg] = useState(0)
     const handleSelectedImgChange = (newSelectedImg) => {

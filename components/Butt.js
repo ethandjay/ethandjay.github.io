@@ -14,6 +14,6 @@ export default function Butt(props) {
     }, [windowHeight])
 
     return(
-        <div className="butt" style={{ height: `${windowHeight/2 - 192}px` }}></div>
+        <div className="butt" style={{ height: `${windowHeight/2 - 202.5}px` }}></div>
     )
 }
