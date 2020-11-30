@@ -47,8 +47,8 @@ export default function Background(props) {
             <Map showControls={showControls} showOverlays={showOverlays} onControlChange={handleControlChange} selected={selectedImg} />
             <div id="carouselControls" className="carousel slide carousel-fade" data-ride="carousel" data-interval="false" style={{ pointerEvents: "auto" }}>
                 <ol className={`carousel-overlay carousel-indicators control ${showOverlays ? "" : "fade-out"} `} >
-                    {[...Array(6)].map((x, i) =>
-                        <CarouselIndicator num={i} selected={selectedImg} key={i} onSelectedChange={handleSelectedImgChange}/>
+                    {[...Array(7)].map((x, i) =>
+                        <CarouselIndicator num={i} selected={selectedImg==i} key={i} onSelectedChange={handleSelectedImgChange}/>
                     )}
                 </ol>
                 <div className="carousel-inner" role="listbox">

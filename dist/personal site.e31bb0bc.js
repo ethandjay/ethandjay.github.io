@@ -52794,8 +52794,11 @@ function Map(props) {
     }, {
       lat: 9.3814053,
       lng: -84.134413
+    }, {
+      lat: 38.2829449,
+      lng: -111.2740997
     }],
-    zoom: [10, 12, 15, 13, 14, 15]
+    zoom: [10, 12, 15, 13, 14, 15, 13]
   }),
       _useState4 = _slicedToArray(_useState3, 2),
       mapData = _useState4[0],
@@ -53114,10 +53117,10 @@ function Background(props) {
     }
   }, /*#__PURE__*/_react.default.createElement("ol", {
     className: "carousel-overlay carousel-indicators control ".concat(showOverlays ? "" : "fade-out", " ")
-  }, _toConsumableArray(Array(6)).map(function (x, i) {
+  }, _toConsumableArray(Array(7)).map(function (x, i) {
     return /*#__PURE__*/_react.default.createElement(_CarouselIndicator.default, {
       num: i,
-      selected: selectedImg,
+      selected: selectedImg == i,
       key: i,
       onSelectedChange: handleSelectedImgChange
     });
