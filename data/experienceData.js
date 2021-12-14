@@ -5,7 +5,7 @@ const experienceData = [
         "roleExtraClasses": ["section-col-xl",""],
         "roles": [
             {
-                "title": "Software Engineer",
+                "title": "Sr. Software Engineer",
                 "subTitle": "",
                 "timespan": "June 2019 - Present",
                 "descriptionList": [
