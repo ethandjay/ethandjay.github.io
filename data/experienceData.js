@@ -7,7 +7,7 @@ const experienceData = [
             {
                 "title": "Sr. Software Engineer",
                 "subTitle": "",
-                "timespan": "June 2019 - present, current role since August 2021",
+                "timespan": "June 2019 - present, Sr. since August 2021",
                 "descriptionList": [
                     "Developed and supported features for risk management applications as full-stack .NET developer on risk payment processing development team",
                     "Coordinated web- and application-tier migration from legacy mainframe to open systems architecture, saving $1.2M for Visa DPS",
