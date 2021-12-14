@@ -26992,7 +26992,7 @@ const experienceData = [
             {
                 "title": "Sr. Software Engineer",
                 "subTitle": "",
-                "timespan": "June 2019 - Present",
+                "timespan": "June 2019 - present, current role since August 2021",
                 "descriptionList": [
                     "Developed and supported features for risk management applications as full-stack .NET developer on risk payment processing development team",
                     "Coordinated web- and application-tier migration from legacy mainframe to open systems architecture, saving $1.2M for Visa DPS",
@@ -27091,7 +27091,7 @@ const experienceData = [
             {
                 "title": "Senior Online Editor",
                 "subTitle": "",
-                "timespan": "April 2017 - Present  |  <a target='_blank' href='http://www.studlife.com/'>studlife.com</a>",
+                "timespan": "April 2017 - May 2019  |  <a target='_blank' href='http://www.studlife.com/'>studlife.com</a>",
                 "descriptionList": [
                     "Designing new pages and special features as required by the editors, working heavily with PHP, CSS &amp; HTML within the WordPress CMS",
                     "Network security",
