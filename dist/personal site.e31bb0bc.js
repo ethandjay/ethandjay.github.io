@@ -35132,7 +35132,7 @@ var experienceData = [{
   "shorthand": "visa",
   "roleExtraClasses": ["section-col-xl", ""],
   "roles": [{
-    "title": "Software Engineer",
+    "title": "Sr. Software Engineer",
     "subTitle": "",
     "timespan": "June 2019 - Present",
     "descriptionList": ["Developed and supported features for risk management applications as full-stack .NET developer on risk payment processing development team", "Coordinated web- and application-tier migration from legacy mainframe to open systems architecture, saving $1.2M for Visa DPS", "Integrated applications with enterprise security and malware defense frameworks, reducing attack surface", "Planned and oversaw all application deployment tasks, leading a small team through the process of installing 250k+ lines of application code in 10+ server environments"]
@@ -52874,50 +52874,50 @@ function CarouselIndicator(props) {
 }
 },{"react":"node_modules/react/index.js"}],"img/carousel/blur-sm.jpg":[function(require,module,exports) {
 module.exports = "/blur-sm.a9dd7dc1.jpg";
-},{}],"img/carousel/chairs-sm.jpg":[function(require,module,exports) {
-module.exports = "/chairs-sm.3b57042f.jpg";
 },{}],"img/carousel/blur.jpg":[function(require,module,exports) {
 module.exports = "/blur.4d8555aa.jpg";
+},{}],"img/carousel/chairs.jpg":[function(require,module,exports) {
+module.exports = "/chairs.cd1ccda9.jpg";
+},{}],"img/carousel/chairs-sm.jpg":[function(require,module,exports) {
+module.exports = "/chairs-sm.3b57042f.jpg";
 },{}],"img/carousel/highway-sm.jpg":[function(require,module,exports) {
 module.exports = "/highway-sm.96d3f009.jpg";
 },{}],"img/carousel/highway.jpg":[function(require,module,exports) {
 module.exports = "/highway.9d5e6583.jpg";
 },{}],"img/carousel/horse-sm.jpg":[function(require,module,exports) {
 module.exports = "/horse-sm.9994f969.jpg";
-},{}],"img/carousel/chairs.jpg":[function(require,module,exports) {
-module.exports = "/chairs.cd1ccda9.jpg";
 },{}],"img/carousel/horse.jpg":[function(require,module,exports) {
 module.exports = "/horse.d0773c46.jpg";
 },{}],"img/carousel/rocks-sm.jpg":[function(require,module,exports) {
 module.exports = "/rocks-sm.c4190c6a.jpg";
-},{}],"img/carousel/roof-sm.jpg":[function(require,module,exports) {
-module.exports = "/roof-sm.477d3bd3.jpg";
 },{}],"img/carousel/rocks.jpg":[function(require,module,exports) {
 module.exports = "/rocks.5ae777b1.jpg";
+},{}],"img/carousel/roof-sm.jpg":[function(require,module,exports) {
+module.exports = "/roof-sm.477d3bd3.jpg";
 },{}],"img/carousel/roof.jpg":[function(require,module,exports) {
 module.exports = "/roof.29e6611e.jpg";
-},{}],"img/carousel/wires-sm.jpg":[function(require,module,exports) {
-module.exports = "/wires-sm.60570f20.jpg";
 },{}],"img/carousel/wires.jpg":[function(require,module,exports) {
 module.exports = "/wires.3f6fd19f.jpg";
+},{}],"img/carousel/wires-sm.jpg":[function(require,module,exports) {
+module.exports = "/wires-sm.60570f20.jpg";
 },{}],"img/carousel/*.jpg":[function(require,module,exports) {
 module.exports = {
   "blur-sm": require("./blur-sm.jpg"),
-  "chairs-sm": require("./chairs-sm.jpg"),
   "blur": require("./blur.jpg"),
+  "chairs": require("./chairs.jpg"),
+  "chairs-sm": require("./chairs-sm.jpg"),
   "highway-sm": require("./highway-sm.jpg"),
   "highway": require("./highway.jpg"),
   "horse-sm": require("./horse-sm.jpg"),
-  "chairs": require("./chairs.jpg"),
   "horse": require("./horse.jpg"),
   "rocks-sm": require("./rocks-sm.jpg"),
-  "roof-sm": require("./roof-sm.jpg"),
   "rocks": require("./rocks.jpg"),
+  "roof-sm": require("./roof-sm.jpg"),
   "roof": require("./roof.jpg"),
-  "wires-sm": require("./wires-sm.jpg"),
-  "wires": require("./wires.jpg")
+  "wires": require("./wires.jpg"),
+  "wires-sm": require("./wires-sm.jpg")
 };
-},{"./blur-sm.jpg":"img/carousel/blur-sm.jpg","./chairs-sm.jpg":"img/carousel/chairs-sm.jpg","./blur.jpg":"img/carousel/blur.jpg","./highway-sm.jpg":"img/carousel/highway-sm.jpg","./highway.jpg":"img/carousel/highway.jpg","./horse-sm.jpg":"img/carousel/horse-sm.jpg","./chairs.jpg":"img/carousel/chairs.jpg","./horse.jpg":"img/carousel/horse.jpg","./rocks-sm.jpg":"img/carousel/rocks-sm.jpg","./roof-sm.jpg":"img/carousel/roof-sm.jpg","./rocks.jpg":"img/carousel/rocks.jpg","./roof.jpg":"img/carousel/roof.jpg","./wires-sm.jpg":"img/carousel/wires-sm.jpg","./wires.jpg":"img/carousel/wires.jpg"}],"components/CarouselImage.js":[function(require,module,exports) {
+},{"./blur-sm.jpg":"img/carousel/blur-sm.jpg","./blur.jpg":"img/carousel/blur.jpg","./chairs.jpg":"img/carousel/chairs.jpg","./chairs-sm.jpg":"img/carousel/chairs-sm.jpg","./highway-sm.jpg":"img/carousel/highway-sm.jpg","./highway.jpg":"img/carousel/highway.jpg","./horse-sm.jpg":"img/carousel/horse-sm.jpg","./horse.jpg":"img/carousel/horse.jpg","./rocks-sm.jpg":"img/carousel/rocks-sm.jpg","./rocks.jpg":"img/carousel/rocks.jpg","./roof-sm.jpg":"img/carousel/roof-sm.jpg","./roof.jpg":"img/carousel/roof.jpg","./wires.jpg":"img/carousel/wires.jpg","./wires-sm.jpg":"img/carousel/wires-sm.jpg"}],"components/CarouselImage.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -56462,7 +56462,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63688" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51733" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
