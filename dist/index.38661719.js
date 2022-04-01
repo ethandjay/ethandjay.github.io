@@ -41676,33 +41676,34 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _contactCell = require("./ContactCell");
 var _contactCellDefault = parcelHelpers.interopDefault(_contactCell);
+var _ethanJaynesResumePdf = require("url:../doc/EthanJaynesResume.pdf");
 function AboutContent(props) {
     return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "section-text section-col",
         __source: {
             fileName: "components/AboutContent.js",
-            lineNumber: 7,
+            lineNumber: 8,
             columnNumber: 9
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
         __source: {
             fileName: "components/AboutContent.js",
-            lineNumber: 8,
+            lineNumber: 9,
             columnNumber: 13
         },
         __self: this
     }, "About"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "components/AboutContent.js",
-            lineNumber: 9,
+            lineNumber: 10,
             columnNumber: 13
         },
         __self: this
     }, "Senior Software Engineer at Visa and WashU Computer Science graduate. Avid music junkie interested in using innovative technology to build ethical and creative solutions to problems."), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "components/AboutContent.js",
-            lineNumber: 12,
+            lineNumber: 13,
             columnNumber: 13
         },
         __self: this
@@ -41711,16 +41712,16 @@ function AboutContent(props) {
         href: "https://www.linkedin.com/in/ethanjaynes1/",
         __source: {
             fileName: "components/AboutContent.js",
-            lineNumber: 13,
+            lineNumber: 14,
             columnNumber: 49
         },
         __self: this
     }, "LinkedIn"), " or ", /*#__PURE__*/ _reactDefault.default.createElement("a", {
         target: "_blank",
-        href: "/doc/EthanJaynesResume.pdf",
+        href: _ethanJaynesResumePdf,
         __source: {
             fileName: "components/AboutContent.js",
-            lineNumber: 13,
+            lineNumber: 14,
             columnNumber: 133
         },
         __self: this
@@ -41728,7 +41729,7 @@ function AboutContent(props) {
         className: "row contact-grid",
         __source: {
             fileName: "components/AboutContent.js",
-            lineNumber: 15,
+            lineNumber: 16,
             columnNumber: 13
         },
         __self: this
@@ -41737,7 +41738,7 @@ function AboutContent(props) {
         link: "mailto:ethandjay@gmail.com",
         __source: {
             fileName: "components/AboutContent.js",
-            lineNumber: 16,
+            lineNumber: 17,
             columnNumber: 17
         },
         __self: this
@@ -41746,7 +41747,7 @@ function AboutContent(props) {
         link: "https://www.linkedin.com/in/ethanjaynes1/",
         __source: {
             fileName: "components/AboutContent.js",
-            lineNumber: 17,
+            lineNumber: 18,
             columnNumber: 17
         },
         __self: this
@@ -41755,7 +41756,7 @@ function AboutContent(props) {
         link: "https://github.com/ethandjay/",
         __source: {
             fileName: "components/AboutContent.js",
-            lineNumber: 18,
+            lineNumber: 19,
             columnNumber: 17
         },
         __self: this
@@ -41764,7 +41765,7 @@ function AboutContent(props) {
         link: "https://twitter.com/ethan_jaynes",
         __source: {
             fileName: "components/AboutContent.js",
-            lineNumber: 19,
+            lineNumber: 20,
             columnNumber: 17
         },
         __self: this
@@ -41780,7 +41781,7 @@ $RefreshReg$(_c, "AboutContent");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"4mchR","./ContactCell":"5Daen","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"5Daen":[function(require,module,exports) {
+},{"react":"4mchR","./ContactCell":"5Daen","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13","url:../doc/EthanJaynesResume.pdf":"aT28d"}],"5Daen":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1844 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41856,6 +41857,9 @@ module.exports = require('./helpers/bundle-url').getBundleURL('4eUPg') + "linked
 
 },{"./helpers/bundle-url":"chiK4"}],"22jkD":[function(require,module,exports) {
 module.exports = require('./helpers/bundle-url').getBundleURL('4eUPg') + "twitter.0e9fe8f0.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"chiK4"}],"aT28d":[function(require,module,exports) {
+module.exports = require('./helpers/bundle-url').getBundleURL('4eUPg') + "EthanJaynesResume.119ca584.pdf" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"chiK4"}],"7Gu73":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b73d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
