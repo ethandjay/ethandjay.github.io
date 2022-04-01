@@ -21451,7 +21451,7 @@ function Role(props) {
             columnNumber: 13
         },
         __self: this
-    }, props.role.subTitle), /*#__PURE__*/ _reactDefault.default.createElement("ul", {
+    }, _reactHtmlParserDefault.default(props.role.subTitle)), /*#__PURE__*/ _reactDefault.default.createElement("ul", {
         __source: {
             fileName: "components/Role.js",
             lineNumber: 15,
@@ -27021,7 +27021,7 @@ const experienceData = [
         "roles": [
             {
                 "title": "Teaching Assistant",
-                "subTitle": "CSE131: Introduction to CS\nCSE247: Data Structures & Algorithms",
+                "subTitle": "CSE131: Introduction to CS<br>CSE247: Data Structures & Algorithms",
                 "timespan": "5 Semesters Combined Experience",
                 "descriptionList": [
                     "Assisted students with Java lab assignments. Led teams of students as they completed workshops on topics like polymorphism, runtime complexity, and general best practices.",

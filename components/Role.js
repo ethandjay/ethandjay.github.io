@@ -11,7 +11,7 @@ export default function Role(props) {
         <div className={`col section-col ${props.extraClasses}`}>
             <h1 className="role-title">{props.role.title}</h1>
             <h3>{ReactHtmlParser(props.role.timespan)}</h3>
-            <h2>{props.role.subTitle}</h2>
+            <h2>{ReactHtmlParser(props.role.subTitle)}</h2>
             <ul>
                 {description}
             </ul>
